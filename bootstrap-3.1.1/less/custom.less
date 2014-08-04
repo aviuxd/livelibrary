@@ -1,0 +1,155 @@
+//Text Optimization
+//=========================================================
+// HTML.chrome.win { -webkit-text-stroke: 0.9px; }
+
+//Media Query to handle fonts for Chrome on WinXX
+//=========================================================
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+	@font-face {
+		font-family: 	OsifontRegular;
+		src: 			url('../../../fonts/proxima-nova-regular.svg') format('svg');
+	}
+
+	@font-face {
+		font-family: 	OsifontSemibold;
+		src: 			url('../../../fonts/proxima-nova-semibold.svg') format('svg');;
+	}
+
+	@font-face {
+		font-family: 	OsifontItalics;
+		src: 			url('../../../fonts/proxima-nova-regular-italic.svg') format('svg');
+	}
+}
+
+
+//Navbar
+//=========================================================
+
+.navbar-osi{
+	background-color: 	@nav-fill;
+	color: 				@nav-text;
+}
+.nav-links-osi{
+
+}
+.nav-link-osi{
+		>li{
+			>a{
+			&:link{
+				color: 		#fff;
+			}
+			&:hover{
+				color: 				darken(#fff, 10%);
+				text-decoration: 	none;
+				background-color: 	darken(@nav-fill, 10%);
+			}
+			&:visited{
+				color: 		#fff;
+			}
+			&:active{
+				color: 		#fff;
+			}	
+		}
+	}
+}
+
+.navbar-brand{
+	color: 			#fff;
+	font-family: 	OsifontSemibold;
+		
+	&:link{
+		color: 		#fff;
+	}
+	&:hover{
+		color: 				darken(#fff, 10%);
+		text-decoration: 	none;
+	}		
+}
+
+.page-header{
+	margin-top:	-10px;
+	border-bottom: 	0px;
+		font-size: ceil(@font-size-base * 1.6);
+			color: #555;
+
+}
+
+p, li{
+	text-align:		justify; 
+	text-justify: 	inter-word;
+}
+
+.balance-text {
+    text-wrap: 		balanced;
+}
+
+
+
+@btn-search-background:	#39978C;
+@btn-search-border:				darken(#39978C, 8%);
+
+.btn-search{
+	border-radius: 	0px;
+	margin-left:  	-6px;
+	.button-variant(#fff, @btn-search-background, @btn-search-border);
+}
+
+
+//Custom Font definitions for Bold and Italics
+//=========================================================
+b, strong{
+	font-family: 	OsifontSemibold;
+	font-weight: 	normal !important;
+}
+
+i{
+	font-family: 	OsifontItalics;
+	font-weight: 	normal;
+	font-style: 	normal !important;
+}
+
+.glyphicon-play{
+	font-size: 		0.7em;
+	color: 			#888;
+	padding-left: 	5px;
+}
+
+.glyphicon-home{
+	font-size: 		0.8em;
+	color: 			#333;
+
+}
+
+.breadcrumb{
+	padding: 		8px 15px 0px 0px;
+}
+
+.form-control{
+	border-radius: 	0px;
+	border: 		1px solid #39978C;
+}
+
+// .btn-search{
+// 	border-radius: 	0px;
+// 	color: 				#fff;
+// 	background-color:	#39978C; 
+// }
+
+//Fix for footer to the bottom of the page
+//==========================================================
+
+html, body{
+	height: 		100%;
+}
+
+.wrap{
+	min-height: 		100%;
+}
+
+.main{
+	overflow:		auto;
+	padding-bottom: 260px;
+
+}
+

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="image/favicon.ico">
+
+    <title>Dashboard Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.1.1/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap-3.1.1/css/dashboard.css" rel="stylesheet">
+
+    <!-- SideNave for these pages No LESS available for this CSS, copied as is from Bootstrap Docs-->
+     <link href="bootstrap-3.1.1/css/sidenav.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style type="text/css" id="holderjs-style"></style></head>
+
+  <body>
+
+    <div class="navbar navbar-osi" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">PI Live Library</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right nav-link-osi">
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- Breadcrumb and Search Interaction
+============================================================================ -->
+    <div class="container">
+      <div class="row" >
+        <div class="col-lg-8">
+          <ol class="breadcrumb">
+            <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li><span class="glyphicon glyphicon-play"></span>
+            <li><a href="#">Library</a></li><span class="glyphicon glyphicon-play"></span>
+            <li class="active">Data</li>
+          </ol>
+        </div>
+        <div class="col-lg-4">
+          <form class="navbar-form navbar-right">
+            <input class="form-control" placeholder="Search Live Library..." type="text">
+            <button type="button" class="btn btn-default btn-search"><span class="glyphicon glyphicon-search"></span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Page Header
+============================================================================ -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+            <h1 class="page-header">PI Web Services 2012</h1>
+        </div>
+      </div>
+    </div>
+
+<!-- Sidenav and Content
+============================================================================ -->
+    <div class="container main">
+      <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-3">
+
+          <div class="bs-docs-sidebar hidden-print affix" role="complementary">
+            <ul class="nav bs-docs-sidenav">
+                          
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-8 col-sm-8 col-md-9">
+
+          <h2 class="sub-header">Server error in PI Web Services application</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>This error indicates:</th>
+                  <th>To resolve this error:</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Permissions on the file path specified in the error message are restricted if received when a user enters a URL in Windows Internet Explorer browser to verify the PI Services installation.</td>
+                  <td>Verify that the directory in the message has read and write access for the Process ID account:
+                      <ul>
+                        <li>The folder Temporary ASP.NET Files, typically found in <code>C:\Windows\</code> </li>
+                        <div class="well">
+                          Note: <code>Microsoft.NET\Framework\v2.0.50727</code>, is used by CLR to store compiled code for ASP.NET applications. PI Web Services does not modify this in any way. The Network Service account requires write permission to this folder and its subfolders. 
+                        </div>
+                        <li >You can also use the <code>aspnet_regiis.exe</code> utility to access these permissions. The utility can be found in <br> <code> C:\Windows\Microsoft.NET\Framework\v2.0.50727</code>. Or, to open in a command prompt window, enter:<br> <code>aspnet_regiis -ga "NT AUTHORITY\NETWORK SERVICE"</code></li>
+                      </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>See Also</h3>
+              <p><a href="#">Implicit sign-ups</a></p>
+              <p><a href="#">Sign up for data updates</a></p>
+              <p><a href="#">IPITimeSeries interface</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <ul class="footer-link">
+              <li><a href="#">OSIsoft Home</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">vCampus</a></li>
+              <li><a href="#">Learning</a></li>
+              <li><a href="#">OSIsoft Youtube Channel</a></li>
+              <li><a href="#">Worldwide Locations</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <ul class="footer-link">
+              <li><a href="#">Technical Support</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Copyright</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <p>For 30 years and over 10,000 installations worldwide, OSIsoft has gathered and created an abundance of information and technical expertise. Here, we provide our customers and visitors with access to a shared library of those resources.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/docs.js"></script>
+    <script src="js/insert.js"></script>
+<!--     // <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/balance-text/1.3.0/jquery.balancetext.min.js"></script> -->
+
+    <script>
+    $(function(){
+
+      $('.bs-docs-sidenav >li:nth-child(5)').addClass('active');
+
+      $('.bs-docs-sidenav >li').fadeIn('slow');
+
+    });
+    </script>
+
+</body></html>
