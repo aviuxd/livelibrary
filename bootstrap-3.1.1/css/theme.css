@@ -1,14 +1,14 @@
 @font-face {
   font-family: OsifontRegular;
-  src: url('../../../fonts/Proxima-Nova-Regular.otf') format('opentype'), url('../../../fonts/proxima-nova-semibold.svg') format('svg');
+  src: url('../../fonts/Proxima-Nova-Regular.otf') format('opentype'), url('../../fonts/proxima-nova-semibold.svg') format('svg');
 }
 @font-face {
   font-family: OsifontSemibold;
-  src: url('../../../fonts/Proxima-Nova-Semibold.otf') format('opentype'), url('../../../fonts/proxima-nova-regular.svg') format('svg');
+  src: url('../../fonts/Proxima-Nova-Semibold.otf') format('opentype'), url('../../fonts/proxima-nova-regular.svg') format('svg');
 }
 @font-face {
   font-family: OsifontItalics;
-  src: url('../../../fonts/Proxima-Nova-Regular-Italic.otf') format('opentype'), url('../../../fonts/proxima-nova-regular-italic.svg') format('svg');
+  src: url('../../fonts/Proxima-Nova-Regular-Italic.otf') format('opentype'), url('../../fonts/proxima-nova-regular-italic.svg') format('svg');
 }
 .btn-default,
 .btn-primary,
