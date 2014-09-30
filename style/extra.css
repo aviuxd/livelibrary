@@ -1,0 +1,1280 @@
+/* @override 
+	http://doclibtstwfe01.osisoft.int/LiveLibrary/ui/css/extra.css */
+
+/* $Id: LiveContent/ui/skins/base/css/extra.css 1.2 2010/07/01 13:10:44EDT tresea Exp  $ */
+
+
+/* =============================================================
+ * 01. CSS for LC DROP DOWNS
+ * ============================================================= */
+ 
+span.lc_toc_doc_title {
+
+	padding-left: 30px;
+}
+div.lc_toc_doc_title {
+	margin-left: 9px;
+}
+
+li.toc_with_child>div>div.lc_toc_doc_title {
+	padding-top: 2px;
+	margin-left: 18px;
+}
+
+.nav_bar_container {
+
+   height: 0px;
+
+}
+
+.main_content{
+
+margin-left:40px;
+margin-top: 40px;
+
+}
+
+/* =============================================================
+ * 02. Header & Footer styles
+ * ============================================================= */
+
+.header_nav_bar {
+	overflow:hidden;
+	float:left;
+	margin:0pt 0pt 0pt 0pt;
+	padding:0pt 0pt 0pt 0pt; 
+	background: #FFFFFF;
+}
+
+.tech_support_links {
+	float: right;
+	position: relative;
+	padding-bottom: 6px;
+	margin: 8px -20px 0px 20px;
+	overflow: hidden;
+	font-family: Segoe UI;
+	font-size: 10pt;
+	line-height: 6pt;
+}
+
+ 
+.header_links {
+	float: right;
+	padding: 7px 10px;
+	overflow:hidden;
+}
+
+.header_search .float_link{
+
+	visibility:hidden;
+	display:none;
+
+}
+
+
+.float_link {
+	margin-top: 50px;
+	font-family: Segoe UI;
+	font-size: 10pt;
+	color: #000000;
+
+}
+
+.tech_support_links, .header_links  a:link {    
+	color: #000000;    
+	text-decoration: none;
+}
+
+.tech_support_links, .header_links  a:visited {
+	color:#000000;
+	text-decoration: none;
+}
+
+
+.header_logo{
+	height: 100%;
+	float:left;
+	margin-left: 10px;
+	margin-top: 15px;
+	margin-bottom: 23px;
+}
+
+.footer_feedback{
+	height: 100%;
+	margin-top: 8px;
+	font-family: Corbel, sans-serif;
+	/*font-family: Segoe UI;*/
+	font-weight: bold;
+	font-size: 10pt;
+	/*float:left;*/
+	margin-left: 15px;
+}
+
+
+.footer_feedback  a:link {    
+    color: #1455ff;  
+	text-decoration: none;
+}
+
+.footer_feedback  a:visited {
+    color: #1455ff;
+	text-decoration: none;
+}
+
+
+.footer_logo{
+	height: 100%;
+	margin-top:-26px;
+	float:right;
+	margin-right: 10px;
+}
+
+.header_logo_title {
+	font-family: Helvetica Neue, sans-serif;
+	font-size:19px;
+	font-weight: bold;
+	float: right;
+	padding-left:19px; /*28-mar-2014 changed from 2px to line up with .collapse_button (Home text)  */
+	padding-top: 13px;
+}
+
+
+.toc_button{
+	float: left;
+	padding: 10px 30px;
+	overflow:hidden;
+	font-family: Segoe UI;
+	font-weight: bold;
+	font-size: 12pt;
+	display: none;
+}
+
+.collapse_button{
+	float: left;
+	padding: 12px 30px;
+	overflow:hidden;
+	font-family: Segoe UI;
+	font-weight: bold;
+	font-size: 10pt;
+
+}
+
+.collapse_button > a:link, a:hover, a:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+
+}
+
+.header_search {
+	clear: right;
+	width:100%;
+	margin-top: 76px;
+	position:absolute;
+	border-style: solid;
+	border-width:1px;
+	border-color:#717073;
+	background-color: #446D96;
+	color: #000000;
+	height:28px;
+}
+
+.toc_buttons {
+	position:absolute;
+	clear: left;
+	z-index:2;
+	height: 42px;
+	width:350px;
+	margin-top: 76px;
+	position:absolute;
+	border-style: solid;
+	border-width:1px;
+	border-color: #446D96;
+	background-color: #446D96;
+	color: #FFFFFF;
+}
+
+
+.header_links a:link, .header_search a:link, .header_search span.xref:link {
+    color: #000000;
+}
+
+.header_links div.float_link div.float_link {
+	text-decoration: none;
+	padding: 0px 0px;	
+	float:right;
+	overflow:hidden;
+	color: #000000;
+}
+
+
+.header_search .float_input {
+	color: #000000;
+	text-decoration: none;
+	/*margin-left: 920px;
+	float:right;*/
+	overflow:hidden;
+}
+
+.header_search .xref {
+	margin-top:2px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+#simpleSearchForm input {
+    background: #FFFFFF url(../img/search.png) no-repeat right top; /* Cheating at this very moment. */
+    padding-right:20px;
+    color: #B2BEB5;
+}
+
+.lc_dropdown {
+	margin-right: -420px;
+
+}
+
+.lc_dropdown_root {
+	float: right;
+	position:relative;
+	list-style:none;
+	margin-right:-10px;
+	padding-right:0px;
+}
+
+.lc_dropdown_root_title{
+	font-family: Segoe UI;
+	font-size: 10pt;  
+	color:#000000;
+}
+
+#footerPanel {
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+
+
+/* =============================================================
+ * 03. Major Panel Sets
+ * ============================================================= */
+
+
+.top_nav_bar {
+	width: 100%;
+	position: relative;
+	top:-1px;
+	left:0;
+	z-index:-1;
+	height:0px;
+	background-color:#f4f4f4;
+}
+
+.top_nav_bar_inner {
+	height:1px;
+	background-color: #f4f4f4;
+	background: none;
+	position: relative;
+	overflow: hidden;
+}
+
+.page_body, .nested0 {
+	padding:25px;
+}
+
+
+
+/* =============================================================
+ * 04. Resizing / Splitting
+ * ============================================================= */
+.vsplitbar {
+	width: 1px;
+	background-image: url(../img/resizer_vertical_background.png);
+	background-position: left top;
+}
+
+.lcHelpButton, .lcDocButton, .lcDocButton img {
+	width: 16px;
+	height: 16px;
+	float: right;
+	margin: 3px;
+	margin-right: 12px;
+}
+
+
+.vsplitbar a {
+	background-image: url(../img/resizer_vertical_handle.png);
+	background-position: left top;
+	width: 1px;
+	height: 18px;
+	display:block;
+	cursor: e-resize;
+}
+
+
+/* =============================================================
+ * 05. Link & Button Styles
+ * ============================================================= */
+.href {
+    font-family: Corbel, sans-serif;
+    color: #1455ff;
+    font-weight: normal;
+    text-decoration:none;
+}
+
+
+
+/* =============================================================
+ * 06. Login
+ * ============================================================= */
+
+
+.login {
+	height: 100%;
+	overflow:auto;
+	margin:0px;
+	overflow: hidden;
+}
+
+
+#login_background {
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	position: fixed;
+	z-index: 0;
+}
+
+#login_background img {
+	width: 100%;
+	height: 100%; 
+}
+
+#login_content {
+	z-index: 2;
+	position: absolute;
+    height: 100%;
+    width: 100%;
+	color: black;
+	background-image: url("none");
+	background-position: 100% 5%;
+	background-repeat: no-repeat;
+}
+
+
+.inner_home_content {
+  	z-index: 2;
+	position: absolute;
+    height: 100%;
+    width: 100%;
+	background: url("../img/LiveLibrary_watermark.png");
+	background-position: 70% 70%;
+	background-repeat: no-repeat;  
+}
+	
+.login .login_content_table
+{
+    height: 100%;
+}	
+.login table 
+{
+	width: 80%;
+    border: none;
+    border-spacing: 0px;
+    padding: 0px;
+}
+
+.login .splash {
+	background-image: url("ui.xql?action=image&resource=LiveLibrary_logindialog.png");
+	background-repeat:no-repeat;
+	height: 314px;
+	width: 424px;
+	margin-top: 100px;
+
+}
+
+.login .fields {
+	text-align:center;
+	font: Corbel, sans-serif;
+	font-size:11px;
+	font-weight: bold;
+	padding-top:85px;
+}
+
+.login .fields div {
+	margin-bottom: 5px;
+}
+
+.login_input input, .login_input select {
+    width:200px;
+}
+
+.login_label {
+	text-align:right;
+	padding:5px;
+}
+
+.login_input{
+	text-align: left;
+}
+
+.login_button {
+	margin-top:15px;
+	margin-right: 100px;
+	text-align: right;
+}
+
+
+/* =============================================================
+ * 25. Home Page Styles
+ * ============================================================= */ 
+ 
+.home_title {
+ 	font: Corbel, sans-serif;
+	font-size: 20pt;
+ 	font-weight: bold;
+	padding: 10px 0 0 20px;
+	margin: 0;
+	color: #0073CF;
+	/*This is the book title when you open the book from the main library page*/
+}
+
+/*
+.home_copyright_separator {
+ 	font-size: 0.9em;
+	padding: 3px 0 0 0;
+	width: 100%;
+	border-bottom: 1px dashed silver;
+	margin: 0;
+	color: black;
+}
+
+
+.home_copyright_symbol {
+ 	font-size: 0.9em;
+	padding: 4px 0 0 20px;
+	margin: 0;
+	color: black;
+}
+
+.home_copyright {
+ 	font-size: 0.9em;
+	padding: 3px 20px;
+	margin: 0;
+	color: black;
+}
+*/
+
+.lc_splashpagetitle{  
+	margin-top: 12px; 
+	margin-left: 55px;
+	margin-bottom: 1em; 
+	font-size: 19pt; 
+	font-family: Segoe UI, Sans-Serif; 
+	font-weight: bold; 
+	color: #363737 ;
+	border-bottom: 2px;
+	border-style: none none solid none;
+	border-color: #CDDCEB;
+	;
+}
+
+.lc_splashpageheading{  
+	margin-top: 12px; 
+	margin-left: 55px;
+	font-size: 12pt; 
+	font-family: Segoe UI, Sans-Serif; 
+	font-weight: semibold; 
+	color: #000000;
+}
+
+/* FW added 8-22-13 START */
+.lc_splashpagebody{  
+	margin-top: 12px; 
+	margin-left: 55px;
+	margin-right: 24px;
+	font-size: 12pt; 
+	font-family: Segoe UI; 
+	font-weight: regular; 
+	color: #000000;
+}
+/* FW added 8-22-13 END */
+
+.lc_splashpagelist {
+  width: 100%;
+  list-style: none;
+
+}
+
+.lc_splashpageli{
+  display: block;
+  margin-left: 70px;
+  font-family: Segoe UI, Sans-Serif;
+  font-size: 12pt;
+  font-weight: regular;
+  margin-bottom: 12px;
+  /*margin-top: 14px;*/
+  color: blue;
+}
+
+.lc_splashpageli  a:link {    
+	color: blue;    
+	text-decoration: none;
+}
+
+.lc_splashpageli  a:visited {
+	color: blue;
+	text-decoration: none;
+}
+
+.lc_splashpageli  a:hover{    
+	color: #5C5CFF;    
+	text-decoration: none;
+}
+
+
+.copyright {
+    margin-top: 15pt;
+    font-size: 90%;
+}
+
+       
+.scroll_wrapper, .copyright_link {
+   padding-left: 15pt;
+   padding-right: 10pt;
+}
+
+.copyright_link .href {
+	font-family:Corbel, Sans-Serif;
+	font-size:0.8em;
+	color: #0000FF
+}
+
+/* Copyright formatting */
+.t1, .t2, .t3, .t4, .t5 {
+  color: black;  /*DWO 05-30-2013 */
+  font-family: Corbel, Sans-Serif;
+  font-weight: bold;
+  font-size: 11pt;
+  line-height: 11pt;
+}
+
+.t1, .t2, .t3 {
+  margin-top: 12pt;
+  margin-bottom: 3pt;
+}
+
+.t4, .t5 {
+  margin-top: 6pt;
+  margin-bottom: 0pt;
+}
+
+.p1, .p2, .p3  {
+  font-size: 11pt;
+  margin-top: 11pt;
+  line-height: 11pt;
+}
+
+
+/******************************************
+	26. Search Styles
+*******************************************/
+
+.search_result_header {
+	font-weight:normal;
+	color:blue;
+	text-decoration:underline;
+}
+.search_result_footer_head {
+	font-weight:bold;
+	visibility: hidden;
+	display: none;
+}
+.search_result_footer_content {
+	font-weight:normal;
+	visibility: hidden;
+	display: none;	
+}
+
+.search_result_header, .search_result_excerpt {
+	width: 100%;
+	margin-bottom: 0px;
+	display: block;
+}
+
+.search_result_date {
+	margin-right: 1cm;
+	visibility: hidden;
+	display: none;
+}
+
+#search_showPrevNext {
+	padding: 10px 0px 10px 10px;
+	margin-bottom:10px;
+	background-color: #FFFFFF;
+	border-bottom: solid;
+	border-bottom: 2px;
+	border-style: none none solid none;
+	border-color: #CDDCEB;
+}
+
+img.search_type {
+	margin-right: 8px;
+}
+
+/*DWO 2014-01-17  Added to change search term highlighting which looked like hyperlinks  */
+
+.highlight {
+    color: #FF9900;
+}
+
+
+/****************************************
+		32. Basic TOC Styles
+****************************************/
+
+span.lc_toc_doc_title {
+	margin-left: 20px;
+	padding-left: 10px;
+	font-family: Segoe UI, Sans-Serif;
+	font-weight: regular;
+	font-size: 10pt;
+}
+div.lc_toc_doc_title {
+	/*margin-left: 20px;*/
+	font-family: Segoe UI, Sans-Serif;
+	font-weight: regular;
+	font-size: 10pt;
+}
+li.toc_with_child>div>div.lc_toc_doc_title {
+	margin-left: 20px;
+	font-family: Segoe UI;
+	font-weight: regular;
+	font-size: 10pt;
+}
+
+
+li.lc_toc_document a {
+	text-decoration: none;
+	color: black;
+}
+
+.lc_toc_tree_inside_folder, .lc_toc_tree_inside_document {
+ 	list-style-type:none;
+ 	padding-left: 16px !important;
+	padding-right: 6px !important;
+ 	display:none;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+
+.inner_admin_menu, .inner_toc_menu {
+    padding-left:20px;
+	padding-top: 20px;
+	overflow: auto;
+	clear:both;
+	background-color: #F4F4F4;
+}
+
+/****************************************
+		33. Basic Publist Styles
+****************************************/
+
+table.publist {
+	width: 100%;
+	padding-left:0px;
+	border: none;
+}
+
+a.pub_title_link {
+	/*float:left;
+	position:relative;*/
+    font-family: Segoe UI, sans-serif;
+    color: #1455ff;
+    font-weight: normal;
+	font-size: 10pt;
+    text-decoration:none;
+	margin-top:-16px;
+
+}
+
+.publist tr td {
+/*padding-bottom: 15px;*/
+vertical-align: middle;
+}
+
+ .xform_browse_doc {
+ 	background-color: #F2F8FF;
+ 	margin:15px;
+ 	padding:10px;
+	visibility:hidden;
+	display:none;
+ }
+
+
+/****************************************
+		34. Admin Config Styles
+****************************************/
+.admin_config_menu_item {
+	padding:1px;
+	margin-right:10px;
+	color:black !important;
+	float:left;
+}
+
+.main_nav_bars_container {
+	bottom: 0px; 
+	left: 0px; 
+	width: 100%; 
+	position: absolute;
+}
+ 
+
+
+/****************************************
+		35. General Content Styles
+****************************************/
+
+A:hover {
+	color:#5C5CFF;
+}
+A:link {    
+	color: #0000FF;    
+	text-decoration: none;
+}
+A:link:hover {
+	color:#5C5CFF;
+}
+/* Added the following tag to correct the conflict with the toc tag that produced missing external link problem */
+.contentPanel A:visited { 
+	color: Purple;
+}
+A[name] {
+	display:none; 
+}  /* fixes extra line added above code blocks in bullets*/
+h1.topictitle1 {  
+	margin-top: 0.25em; 
+	margin-bottom: 1em; 
+	font-size: 1.95em; 
+	font-family: Corbel, Sans-Serif; 
+	font-weight: bold; color: #0073CF;
+	border-bottom: solid;
+	border-bottom: 2px;
+	border-style: none none solid none;
+	border-color: #CDDCEB;
+}
+
+.topictitle2 { 
+	margin-top: 2em; 
+	margin-bottom: 1em; 
+	font-size: 1.75em; 
+	font-family: Corbel; 
+	font-weight: bold; 
+	color: #0073CF;
+}
+.sectiontitle
+{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: #0073CF;
+    font-size: 1.17em;
+    font-weight: bold;
+    font-family: Corbel, Sans-Serif;
+}
+/* dwo 2014-03-13 watermark test */
+.ctp { 
+	background-image: url('../img/ctp_watermark.png'); 
+	background-repeat: repeat-y; 
+	padding-bottom:150px;
+}
+
+#contentPanel  {
+	font-family: Cambria, Georgia, Sans-Serif; 
+	font-size: 1.5em;
+}
+#lc_doc_header {
+	font-size: 0.9em; 
+	font-family: Corbel, Sans-serif; 
+	font-weight:normal;
+}
+#lc_doc_header .href {
+	font-family: Corbel, Sans-Serif;
+}
+#lc_doc_footer  {
+	/*font-size: 1em; 
+	font-family: Corbel, Sans-Serif;*/
+	visibility: hidden;
+    display: none;
+}
+#lc_doc_footer span {
+	display:block;
+}
+#lc_doc_footer .href {
+	font-family: Corbel, Sans-Serif ; 
+	color: -webkit-link; 
+	text-decoration:none;
+}
+#lc_doc_footer .href:hover {
+	color: #5C5CFF;
+}
+#lc_doc_footer .href:visited {
+	color: purple; 
+}
+.parentlink {
+	/*font-family: Corbel, Sans-Serif;*/
+	visibility: hidden;
+    display: none;
+}
+
+.shortdesc {
+	/*font-family: Corbel, Sans-Serif;*/
+	visibility: hidden;
+    display: none;
+}
+
+.parentlink strong {
+	/*font-weight:bold ; 
+	display:block;*/
+	visibility: hidden;
+    display: none;
+}
+.parentlink .href href {
+	/*font-family: Corbel, Sans-Serif ; 
+	color: -webkit-link; 
+	text-decoration:none;*/
+	visibility: hidden;
+	display: none;
+}
+.relinfo {
+	font-family: Corbel, Sans-Serif; 
+	font-weight:normal;
+	padding-bottom:-10px;
+}
+.relinfo strong {
+	font-weight:bold;
+} 
+
+.ullinks {
+	list-style:disc; 
+	font-weight: normal;
+}
+
+/*.ullinks:before { 
+	font-family:Corbel, sans-serif; 
+	font-weight: bold; 
+	font-size:1.17em; 
+	color: #0073CF; 
+    margin-left: -1.1em; 
+	margin-top: 1em; 
+	margin-bottom:0.5em ;
+    content: "Topics in this section";
+}*/
+/* the following two elements fix the spacing introduced by extra br tags added in the automatically generated links */
+li.ulchildlink a[title] {
+	display:block
+}
+li.ulchildlink br  {
+	display: none;
+}
+.ulchildlink { 
+	margin-top: 1em; 
+	margin-bottom: 1em;  
+	margin-left: 0em;    
+	font-size: 1em; 
+	color: Black; 
+	font-weight: normal; 
+} 
+#contentPanel ul {
+	margin-left: 0; 
+	padding-left: 1.3em; 
+	margin-bottom: 1em; 
+	margin-top: 1em;
+}     
+#contentPanel li {
+	margin-top: 0.75em; 
+	position: relative; 
+	left: 0em; 
+	font-family: Cambria, Georgia, Sans-Serif; 
+}
+#contentPanel ol {
+	margin-left: 0; 
+	padding-left: 1.5em; 
+	margin-bottom: 1em; 
+	margin-top: 1em;
+}
+p {
+	margin-top: 0.5em; 
+	margin-bottom: 0.5em;
+}
+/*DWO 05-30-2013 */
+.nolinespace {margin-bottom: 0; margin-top: 0}
+p.nolinespace:first-of-type {margin-bottom: 0; margin-top: 0.5em; }
+
+dt{
+    font-weight: bold;
+    font-family: Corbel;
+    margin-left: 1em;
+    margin-top: 1.25em;
+    padding: 0;
+    display: list-item;
+    list-style: disc;
+    list-style-position: outside;
+    text-indent: 0em;
+} 
+dd dl dt {font-weight: normal; list-style: circle}
+dd
+{
+    margin-left: 1em;
+    margin-top: 0.5em;
+    text-align:justify;
+    /*text-indent: 0.5em;*/
+}
+/* Inline elements */
+.apiname {
+	font-family:Consolas, Monospace;
+}
+.codeph {
+	font-family:Consolas, Monospace; 
+	white-space:normal;
+}
+.cmdname {
+	font-family:Consolas, Monospace;
+	font-weight:bold;
+	white-space:normal;
+}
+.filepath {
+	font-family: Consolas, Monospace;
+}
+/* next style needed because there is an overriding span.filepath in ltr.css */
+SPAN.filepath {
+	font-family: Consolas, Monospace;
+}
+.option {
+	font-family:Consolas, Monospace;
+	font-weight:normal;
+}
+.parmname { 
+	font-family:Consolas, Monospace; 
+	font-weight:bold ;
+}
+.uicontrol {
+	font-family:Corbel, Sans-Serif; 
+	font-weight:bold;
+}
+.userinput{
+	font-family: Consolas, Monospace;
+}
+.wintitle {
+	font-family: Corbel, Sans-Serif;
+	font-weight: normal;
+}
+
+strong {
+	font-weight:bold;
+	font-family: Corbel, Sans-Serif;  /*DWO 05-30-2013 */
+}
+.codeblock
+{
+	width:100%;
+	/* display:block; */
+    font-family: Consolas, Monospace;
+    font-size: 0.85em;
+    background-color: #E8E8E8;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    white-space: pre-line;
+
+}
+
+.codeblock .varname
+{
+ white-space:   nowrap;
+ display: inline; 
+} 
+
+/* DWO 05-30-2013:  Added to handle codeblocks inside note element */
+.note .codeblock{
+    font-family: Consolas, Monospace;
+    font-size: 0.85em;
+    background-color: inherit;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.tip .codeblock{
+    font-family: Consolas, Monospace;
+    font-size: 0.85em;
+    background-color: inherit;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.caution .codeblock{
+    font-family: Consolas, Monospace;
+    font-size: 0.85em;
+    background-color: inherit;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+
+
+/* this next style is new from dave */
+/*pre {
+
+    white-space: pre
+}*/
+.oXygenLogo
+{
+   display:none
+}
+.note
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0.3em 0 .5em 3em;
+    background-color: #DFF1FF; 
+    /*background-image: url("ui.xql?action=image&resource=NoteIcon.png");*/
+	background-image: url('../img/NoteIcon.png');  
+    background-repeat: no-repeat;
+    background-position: 0.1em 0.4em;
+}
+.notetitle
+{
+    display: block;  
+    font-weight: bold;
+    font-family: Corbel, Sans-Serif;
+}
+.notetitle:after { content: "  "}
+.notelisttitle { font-weight: bold }
+.tip
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: #DFF1FF; 
+    padding: 0.3em 0 .5em 3em;
+    /*background-image: url("ui.xql?action=image&resource=TipIcon.png");*/
+	background-image: url('../img/TipIcon.png');
+    background-repeat: no-repeat;
+    background-position: 0.1em 0.4em;
+}    
+.tiptitle
+{
+    display: block;
+    font-weight: bold;
+    font-family: Corbel, Sans-Serif; 
+}
+.tiptitle:after { content: "  "}
+/*  This is the new way.  Trisoft reverted away from this.
+.caution
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: #DFF1FF; 
+    padding: 0.3em 0 .5em 3em;
+	background-image: url('../img/WarningIcon.png');
+    background-repeat: no-repeat;
+    background-position: 0.1em 0.4em;
+	font-weight: normal;
+}    
+.cautiontitle
+{
+    display: block;
+    font-weight: bold;
+    font-family: Corbel, Sans-Serif; 
+}
+ End of temporary Trisoft fix */
+/*  This is the old way in Live Library .  Trisoft changed how they do this.
+
+.caution
+{
+    margin-top: 0em;
+    margin-bottom: 1em;
+    background-color: #DFF1FF; 
+    padding: 0.3em 0 .5em 3em;
+   /* background-image: url('WarningIcon.png');  Trisoft output configured differently */
+    /*background-repeat: no-repeat; 
+    background-position: 0.1em 0.4em;
+    font-weight:normal;
+}    
+.cautiontitle
+{
+    margin-top: 1em;
+    margin-bottom: 0em;
+    padding: 0.3em 0 0em 3em;
+    background-color: #DFF1FF;
+    /*background-image: url("ui.xql?action=image&resource=WarningIcon.png");
+	background-image: url('../img/WarningIcon.png');
+    background-repeat: no-repeat;
+    background-position: 0.1em 0.4em;
+    font-weight: bold;
+    font-family: Corbel;
+}*/
+/* The following caution tags (except cautiontitle:after) render Trisoft's latest version of cautions 4-2013 correctly */
+.caution
+{
+    margin-top: 0em;
+    margin-bottom: 1em;
+    background-color: #DFF1FF; 
+    padding: 0.3em 0 .5em 3em;
+    /* background-image: url('../img/WarningIcon.png'); background-image: url('WarningIcon.png');  Trisoft output configured differently 
+    background-repeat: no-repeat; 
+    background-position: 0.1em -1em;*/
+    font-weight:normal;
+	
+}  
+.cautiontitle:before 
+{
+	content: url("../img/WarningIcon.png") ;
+	float:left;
+	margin-left:-2em;
+	padding-right:1em;
+}  
+.cautiontitle
+{
+    margin-top: 1em;
+    margin-bottom: 0em;
+    padding: 0.3em 0 0em 2em;
+    background-color: #DFF1FF;
+    /*background-image: url("ui.xql?action=image&resource=WarningIcon.png"); 
+	background-image: url('../img/WarningIcon.png');
+    background-repeat: no-repeat;
+    background-position: 0.1em 0.4em;*/
+    font-weight: bold;
+    font-family: Corbel;
+}
+.cautiontitle:after { content: "  "}
+
+.fignone { 
+  border: 1px solid #0073CF ; 
+  padding-left: 8px; 
+  padding-top: 5px; 
+  padding-bottom: 5px; 
+  margin-bottom: 1.25em; 
+  margin-top: 1.25em; 
+} 
+#contentPanel .fignone li {
+	font-family: Corbel, Sans-Serif; 
+	color: #0073CF;
+}
+.figcap {
+	font-family:Corbel, Sans-Serif; 
+	font-style:italic; color: #0073CF; 
+	display:block ; text-align: left; 
+	margin-bottom: 0.5em;
+}
+/* DWO changed for table changes */
+.tablecap {
+	font-family:Corbel, Sans-Serif; 
+	font-style:italic; 
+	font-size: 1.0em; 
+	color: #0073CF; 
+	display:block ; 
+	text-align: left; 
+	margin-top: .8em;
+	margin-bottom: -.5em;
+}
+/* added the following style because table desc occurs within table element and attempt to make look less bad */
+caption span.tabledesc {font-size: 1.11em ; }
+
+span.tabledesc { 
+	text-align:left ;
+	display: inline; 
+	margin-left: 0;
+	margin-bottom: 0.5em;
+}
+/* 05-30-2013 added the following style because fig desc occurs within table element and attempt to make look less bad */
+span.figdesc { 
+	text-align:left ;
+	display: inline; 
+	margin-left: 0;
+}
+
+caption {
+	margin-bottom: 0.5em;
+	
+}
+/*.tablenoborder {
+	margin-top: 1em; 
+	margin-bottom: 1em;
+}*/
+.choicetableborder {
+	margin-top: 1em; margin-bottom: 1em;
+}
+.choicetableborder tr {
+	border-bottom:solid 1px; 
+	border-color: gray ; 
+}
+TABLE { 
+	border-bottom: 2px solid; 
+	border-top: 2px solid; 
+	border-color: gray; 
+    margin-bottom: 1em;  
+	margin-top: 1em;  
+	font-size: .9em; 
+} 
+table p {
+	margin-top:0em; 
+	margin-bottom:0.25em;
+}
+#contentPanel table ol {
+	margin-top: 0em; 
+	margin-bottom: 0.5em;
+}
+#contentPanel table ul {
+	margin-top: 0em; 
+	margin-bottom: 0.5em;
+}
+#contentPanel table li {
+	margin-top: 0em; 
+	margin-bottom: 0.25em; 
+}
+thead { 
+	font-weight: bold;    
+	font-family: Corbel; 
+	border-bottom: 2px solid;  
+	border-color: gray;
+}
+TH { 
+	text-align: left  
+}
+.cellrowborder { 
+	border-left:solid 1px; 
+	border-top:none; 
+	border-right:solid 1px; 
+	border-bottom:solid 1px; 
+	border-color: gray ; 
+	padding-left: 0.5em; 
+	padding-right: 0.5em
+}  /* This controls rows of regular tables */
+.row-nocellborder { 
+	border-left:none; 
+	border-right:none; 
+	border-top:none; 
+	border-right: hidden; 
+	border-bottom:solid 1px; 
+	border-color: gray;
+}
+.cell-norowborder { 
+	border-top:none; 
+	border-bottom:none; 
+	border-left:none; 
+	border-bottom: hidden; 
+	border-right:solid 1px; 
+	border-color: gray;
+}
+.nocellnorowborder { 
+	border:none; 
+	border-right: hidden;
+	border-bottom: hidden; 
+	border-color: white;
+}
+
+IMG { 
+	margin-top: 0.5em;
+}
+
+
+

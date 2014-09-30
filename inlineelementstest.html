@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="image/favicon.ico">
 
-    <title>Protect piadmin</title>
+    <title>Dashboard Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-3.1.1/css/bootstrap.css" rel="stylesheet">
@@ -17,7 +17,9 @@
     <link href="bootstrap-3.1.1/css/dashboard.css" rel="stylesheet">
 
     <!-- SideNave for these pages No LESS available for this CSS, copied as is from Bootstrap Docs-->
-     <link href="bootstrap-3.1.1/css/sidenav.css" rel="stylesheet">
+    <link href="bootstrap-3.1.1/css/sidenav.css" rel="stylesheet">
+
+    <link href="style/extra.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -31,9 +33,8 @@
 
   <body>
 
-
   <div class="wrap"> <!-- really large div wrapping, header and content, leaving out the footer-->
-      
+
     <div class="navbar navbar-osi" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -47,13 +48,11 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right nav-link-osi">
-<!--             <li><a href="#">Dashboard</a></li> -->
             <li><a href="#">Settings</a></li>
             <li><a href="#">Profile</a></li>
             <li><a href="#">Help</a></li>
             <li><a href="#">Logout</a></li>
           </ul>
-
         </div>
       </div>
     </div>
@@ -65,8 +64,8 @@
         <div class="col-lg-8">
           <ol class="breadcrumb">
             <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li><span class="glyphicon glyphicon-play"></span>
-<!--             <li><a href="#">Library</a></li><span class="glyphicon glyphicon-play"></span>
-            <li class="active">Data</li> -->
+            <li><a href="#">Library</a></li><span class="glyphicon glyphicon-play"></span>
+            <li class="active">Data</li>
           </ol>
         </div>
         <div class="col-lg-4">
@@ -78,12 +77,13 @@
       </div>
     </div>
 
+
 <!-- Page Header
 ============================================================================ -->
-    <div class="container ">
+    <div class="container">
       <div class="row">
         <div class="col-xs-12">
-            <p class="page-header">LiveLibrary Sample Styles</p>
+            <h1 class="page-header">Asset Framework</h1>
         </div>
       </div>
     </div>
@@ -97,29 +97,58 @@
 
           <div class="bs-docs-sidebar hidden-print affix" role="complementary">
             <ul class="nav bs-docs-sidenav">
-            <!-- Menu items added here by JS in insert.js-->              
+
             </ul>
           </div>
         </div>
         <div class="col-xs-8 col-sm-8 col-md-9">
 
-          <h1>This is H1 Header.</h1>
-          <h2>This is H2 Header.</h2>
-          <h3>This is H3 Header</h3>
-          <h4>This is H4 Header</h4>
-          <h5>This is H5 Header</h5>
-          <p>This is body text. Keep contrast high when styling the font of your choice, and don't over-use font sizes below 13px. It's also generally not a good idea to reduce line height below the default setting (though it can often improve readability when you increase it a little). Unless you're after a very specific look, it's generally considered bad form to have more than three different font families on the same page.</p>
+          <h2 class="sub-header">Inline Elements Test</h2>
+          <p>
+            This topic contains some inline elements like <span class="uicontrol">uicontrol</span> , followed by <span class="cmdname">cmdname</span>, followed by <span class"parmname">parmname</span>, followed by <span class="option">option</span>, followed by <span class="codeph">codeph</span> , followed by <span class="userinput">userinput</span> , followed by <span class="apiname">apiname</span>, followed by <span class="wintitle">Wintitle</span>, followed by an independent <var class="varname">varname</var>, and then a <var class="varname">varname</var> inside <span class="userinput">userinput</span>.
+          </p>
+          
+          <p>
+            Use of inline elements like, uicontrol introduce extra spaces. This becomes particularly problematic with commas: <span class="uicontrol">first</span> , <span class="uicontrol">second</span> , and <span class="uicontrol">third</span>. 
+          </p>
+          
+          <p>This happens with all inline elements, such as <span class="codeph">codeph</span> : </p>
+          
+          <p>this might be used for a list like <span class="codeph">sinusoid</span> , <span class="codeph">sinusoidu</span>, and <span class="codeph">cdt158</span>. Also for <span class="cmdname">cmdname</span>, such as <span class="cmdname">piconfig</span>, <span class="cmdname">piartool</span>, and <span class="cmdname">pidiag</span>.</p>
+          
+          <p>The <span class="uicontrol">Start</span>, <span class="uicontrol">Stop</span>, and <span class="uicontrol">Restart</span> buttons on the toolbar are used to stop and start a service. This topic demonstrates how various inline elements appear, both within a sentence and as the last element in a sentence (before a punctuation mark). </p>
+          
+          <p>Use the <span class="cmdname">cmdname</span> element for commands, such as <span class="cmdname">piconfig</span>. </p>
+          
+          <p>Use the <span class="codeph">codeph</span> element for bits of code or short messages, such as <span class="codeph">Do not jump</span>.</p>
+
+          <p>
+            Use the <span class="filepath">filepath</span> element to show a directory or file name, such as <span class="filepath">C:\Program Files</span>.<br>
+
+            Use the <em>italic</em> element sparingly for emphasis, such as <em>attention</em>.<br>
+
+            Use menucascade for file menus, such as <span class="meuncascade"File > New or File > Close.</span><br>
+
+            Use the <span class="option">option</span> element for values of parameters, such as <span class="option">True</span>.<br>
+
+            Use the <span class"parmname">parmname</span> element for names of parameters, such as <span class"parmname">IsHappy</span>.<br>
+
+            Use the <span class="uicontrol">uicontrol</span> element for words in the user interface, such as <span class="uicontrol">Field name</span>.<br>
+
+            Use the <span class="userinput">userinput</span> element for text that users must type, such as <span class="userinput">piconfig -l</span>.<br>
+
+            Use the varname element for values that get substituted, such as Your Name. You might include varname elements inside other elements, such as userinput . For example, you might tell someone to enter <var class="varname">First=</var> <em>YourFirstName</em>, <var class="varname">Last=</var> <em>YourLastName</em> . Similarly, you might include <var class="varname">varname</var> elements inside <span class="codeph">codeph</span>. For example, use the code For <span class="codeph">i=1 to CounterVariable</span> .<br>
+
+            Use the <span class="wintitle">wintitle</span> element to mark window titles, such as <span class="wintitle">Browse Repository</span>.<br>
+          </p>
         </div>
       </div>
-    </div>      
+    </div>
+
+</div><!-- end of REALLY LARGE DIV wrapping header and content-->
 
 
-
-    </div> <!-- end of REALLY LARGE DIV wrapping header and content-->
-
-
-
-    <div class="footer" >
+    <div class="footer">
       <div class="container">
         <div class="row">
           <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
@@ -150,6 +179,7 @@
     </div>
 
 
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -161,7 +191,7 @@
     <script>
     $(function(){
 
-      $('.bs-docs-sidenav >li:nth-child(1)').addClass('active');
+      $('.bs-docs-sidenav >li:nth-child(8)').addClass('active');
 
       $('.bs-docs-sidenav >li').fadeIn('slow');
 

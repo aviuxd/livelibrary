@@ -1,5 +1,17 @@
 // This javascript inserts all the nav links. Each page has the snippet of code to highlight the active link
 
+  // $.fn.appendUL() = function(){
+
+  //   var html = '<ul class="nav">';
+
+  //   html += '<li style="display:none; text-align:initial;"><a href="">Inline Elements Test</a></li>';
+  //   html += '<li style="display:none; text-align:initial;"><a href="">Inline Elements Test</a></li>';
+
+  //   html += '</ul>';
+
+  //   return(html);
+  // }
+
   $(document).ready(function(){
     $('.bs-docs-sidenav').append('<li style="display:none;    text-align:initial;"><a href="index.html">Home</a></li>');
     $('.bs-docs-sidenav').append('<li style="display:none;    text-align:initial;"><a href="protectpiadmin.html">Protect piadmin</a></li>');
@@ -8,5 +20,10 @@
     $('.bs-docs-sidenav').append('<li style="display:none;    text-align:initial;"><a href="servererror.html">Server error in PI Web Services application</a></li>');
     $('.bs-docs-sidenav').append('<li style="display:none;    text-align:initial;"><a href="exploreevents.html">Explore events related to an element</a></li>');
     $('.bs-docs-sidenav').append('<li style="display:none;    text-align:initial;"><a href="heatpumptemplate.html">Create the heat pump templates</a></li>');
+    $('.bs-docs-sidenav').append('<li style="display:none;    text-align:initial;"><a href="inlineelementstest.html">Inline Elements Test</a></li>');
+
+    $('.bs-docs-sidenav').append('<li style="display:none;    text-align:initial;" id="sub-elements"><a href="inlineelementstest.html">OSIsoft DITA Test Publication Map</a></li>');
+      // $(this).appendUL(html);
   }
   );
+  

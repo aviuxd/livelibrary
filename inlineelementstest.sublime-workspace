@@ -1,0 +1,194 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cont",
+				"controller"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"proje",
+				"Project: Save As"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/avisingh/Dropbox/LiveLibrary/PrototypeGit/inlineelementstest.html",
+		"/Users/avisingh/Dropbox/LiveLibrary/PrototypeGit/.bowerrc",
+		"/Users/avisingh/Dropbox/WORK/LiveLibrary/exploreevents.html",
+		"/Users/avisingh/Dropbox/WORK/LiveLibrary/livelibrary.sublime-project",
+		"/Users/avisingh/Dropbox/Arduino/ArduinoToGSM/PoolToGSM/crc16.c",
+		"/Users/avisingh/angular-seed/app/js/directives.js",
+		"/Users/avisingh/angular-seed/app/phones/dell-streak-7.json",
+		"/Users/avisingh/node_modules/node-todo/config/database.js",
+		"/Users/avisingh/node_modules/node-todo/app/routes.js",
+		"/Users/avisingh/node_modules/node-todo/public/index.html",
+		"/Users/avisingh/node_modules/node-todo/README.md",
+		"/Users/avisingh/node_modules/node-todo/app/.htaccess",
+		"/Users/avisingh/node-todo-master/public/index.html",
+		"/Users/avisingh/node-todo-master/server.js",
+		"/Users/avisingh/example.js",
+		"/Users/avisingh/Desktop/WufooThemeKit/css/custom.css",
+		"/Users/avisingh/Desktop/jquery-backbone-angular-master/code/jquery-example/main.js",
+		"/Users/avisingh/Desktop/jquery-backbone-angular-master/code/jquery-example/style.css",
+		"/Users/avisingh/Desktop/jquery-backbone-angular-master/code/jquery-example/index.html",
+		"/Volumes/Sublime Text 1/Sublime Text.app/Contents/MacOS/changelog.txt"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/avisingh/node_modules/node-todo/app"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"phonecatApp",
+			"phonecatApp ",
+			"phonecatApp",
+			"angular-seed",
+			"myApp",
+			"input.search"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "inlineelementstest.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/angular-seed/angular-tutorial.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 221.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
