@@ -965,14 +965,15 @@ dd
 } 
 
 /* DWO 05-30-2013:  Added to handle codeblocks inside note element */
-.note .codeblock{
-    font-size: 0.85em;
+.note .codeblock,.tip .codeblock, .caution .codeblock{
+    /*font-size: 0.85em;*/
     background-color: inherit;
     padding-left: 0;
     padding-top: 0;
     padding-bottom: 0;
+    border: 0px;
 }
-.tip .codeblock{
+/*.tip .codeblock{
     font-size: 0.85em;
     background-color: inherit;
     padding-left: 0;
@@ -985,10 +986,7 @@ dd
     padding-left: 0;
     padding-top: 0;
     padding-bottom: 0;
-}
-
-
-
+}*/
 
 /* this next style is new from dave */
 /*pre {
@@ -999,18 +997,30 @@ dd
 {
    display:none
 }
-.note
+.note, .tip, .caution
 {
-    margin-top: 1em;
+	display: block;
+	padding: 12px;
+	margin: 0 0 12.5px;
+	font-size: 15px;
+	line-height: 1.6;
+	word-break: break-all;
+	word-wrap: break-word;
+	color: #333333;
+	background-color: #f5f5f5;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+/*    margin-top: 1em;
     margin-bottom: 1em;
     padding: 0.3em 0 .5em 3em;
-    background-color: #DFF1FF; 
+    background-color: #DFF1FF; */
     /*background-image: url("ui.xql?action=image&resource=NoteIcon.png");*/
-	background-image: url('../img/NoteIcon.png');  
+/*	background-image: url('../img/NoteIcon.png');  
     background-repeat: no-repeat;
     background-position: 0.1em 0.4em;
+}*/
 }
-.notetitle
+.notetitle, .tiptitle, .cautiontitle
 {
     display: block;  
     font-weight: bold;
@@ -1018,17 +1028,17 @@ dd
 }
 .notetitle:after { content: "  "}
 .notelisttitle { font-weight: bold }
-.tip
+/*.tip
 {
     margin-top: 1em;
     margin-bottom: 1em;
     background-color: #DFF1FF; 
     padding: 0.3em 0 .5em 3em;
-    /*background-image: url("ui.xql?action=image&resource=TipIcon.png");*/
+    background-image: url("ui.xql?action=image&resource=TipIcon.png");
 	background-image: url('../img/TipIcon.png');
     background-repeat: no-repeat;
     background-position: 0.1em 0.4em;
-}    
+}  */  
 .tiptitle
 {
     display: block;
@@ -1082,38 +1092,38 @@ dd
     font-family: Corbel;
 }*/
 /* The following caution tags (except cautiontitle:after) render Trisoft's latest version of cautions 4-2013 correctly */
-.caution
+/*.caution
 {
     margin-top: 0em;
     margin-bottom: 1em;
     background-color: #DFF1FF; 
-    padding: 0.3em 0 .5em 3em;
+    padding: 0.3em 0 .5em 3em;*/
     /* background-image: url('../img/WarningIcon.png'); background-image: url('WarningIcon.png');  Trisoft output configured differently 
     background-repeat: no-repeat; 
     background-position: 0.1em -1em;*/
-    font-weight:normal;
+/*    font-weight:normal;
 	
-}  
-.cautiontitle:before 
+} */ 
+/*.cautiontitle:before 
 {
 	content: url("../img/WarningIcon.png") ;
 	float:left;
 	margin-left:-2em;
 	padding-right:1em;
-}  
-.cautiontitle
+}  */
+/*.cautiontitle
 {
     margin-top: 1em;
     margin-bottom: 0em;
-    padding: 0.3em 0 0em 2em;
-    background-color: #DFF1FF;
+    padding: 0.3em 0 0em 2em;*/
+/*    background-color: #DFF1FF;*/
     /*background-image: url("ui.xql?action=image&resource=WarningIcon.png"); 
 	background-image: url('../img/WarningIcon.png');
     background-repeat: no-repeat;
     background-position: 0.1em 0.4em;*/
-    font-weight: bold;
+/*    font-weight: bold;
     font-family: Corbel;
-}
+}*/
 .cautiontitle:after { content: "  "}
 
 .fignone { 
