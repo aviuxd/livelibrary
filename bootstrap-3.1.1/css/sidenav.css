@@ -23,7 +23,7 @@
 
 /* All levels of nav */
 .bs-docs-sidebar .nav > li > a {
-  font-family: OsifontSemibold;
+  font-family: ProximaNovaSemibold;
   display: block;
   font-size: 13px;
   font-weight: 500;
@@ -50,7 +50,7 @@
 
 /* Nav: second level (shown on .active) */
 .bs-docs-sidebar .nav .nav {
-  display: none; /* Hide by default, but at >768px, show it */
+  /*display: none;*/ /* Hide by default, but at >768px, show it */
   padding-bottom: 10px;
 }
 .bs-docs-sidebar .nav .nav > li > a {
