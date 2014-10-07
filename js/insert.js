@@ -7,6 +7,9 @@
     htmlVar = '<li style="display:none; text-align:initial;"><a href="inlineelementstest.html">Inline Elements Test</a></li>';
     htmlVar += '<li style="display:none; text-align:initial;"><a href="inlineelementstest-2.html">Inline Elements Test (option 2)</a></li>';
     htmlVar += '<li style="display:none; text-align:initial;"><a href="codeblocktest.html">Codeblock Tests</a></li>';
+    htmlVar += '<li style="display:none; text-align:initial;"><a href="codeblocktest-2.html">Codeblock Tests (option 2)</a></li>';
+    htmlVar += '<li style="display:none; text-align:initial;"><a href="figureswithdescription.html">Figures With Description</a></li>';
+
 
 
     $('.bs-docs-sidenav').append('<li style="display:none;    text-align:initial;"><a href="index.html">Home</a></li>');
@@ -21,7 +24,7 @@
 
     $('#sub-elements').append(htmlVar);
 
-    // $(html).appendTo('.bs-docs-sidenav');
+    // $(html).appendTo('.bs-docs-sidenav'); 
   }
   );
   

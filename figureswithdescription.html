@@ -64,8 +64,8 @@
         <div class="col-lg-8">
           <ol class="breadcrumb">
             <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li><span class="glyphicon glyphicon-play"></span>
-            <li><a href="#">Library</a></li><span class="glyphicon glyphicon-play"></span>
-            <li class="active">Data</li>
+            <li><a href="#">Choice collection types (figures and tables)</a></li><span class="glyphicon glyphicon-play"></span>
+            <li class="active">Figures with descriptions</li>
           </ol>
         </div>
         <div class="col-lg-4">
@@ -83,7 +83,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-            <h1 class="page-header">Asset Framework</h1>
+            <h1 class="page-header">Choice collection types (figures and tables)</h1>
         </div>
       </div>
     </div>
@@ -103,129 +103,43 @@
         </div>
         <div class="col-xs-8 col-sm-8 col-md-9">
 
-          <h2 class="sub-header">Codeblock tests</h2>
-          <p> The codeblock element poses many issues with output rendering. This topic tests many of these issues.</p>
+          <h2 class="sub-header">Figures with descriptions</h2>
+          <p>When you create a figure, an optional element that you include in the figure is the description element, <desc>. The description element describes the figure. At the most basic level, it might say "The following figure shows...." Text in the description element is always printed with the figure. The output script places the text immediately before the figure, separated from the title and figure box in help output.</p>
 
-          <h3>Codeblock inside notes</h3>
-          <p>Inside a note, the shading of the note must be maintained but the shading of the codeblock is different. This poses a challenge. Each note type must be tested separately.</p>
-          <div class="note"><span class="notetitle">Note:</span> 
-                      This is a note with a code block inside a paragraph:
+          <p>The use of description elements is probably most useful if you reuse a figure in multiple topics. Then, each time you insert the figure, the description would automatically be included. You would not need to insert a separate paragraph or retype.</p>
 
-                      <pre class="codeblock">
-                      First line of codeblock.
-                      Second indented line of codeblock.
-                      Third indented line of codeblock.
-                      </pre>
+          <h3>Figures with titles</h3>
+          <p>For example, suppose you are documenting the reconnection logic of a program. To augment the text that describes the logic, you might include a diagram with a description. The following diagram demonstrates the program logic when an interface becomes disconnected from its data source.</p>
+
+          <div class="fignone">
+            <span class="figcap">Program flow for data-source reconnection v1</span>
+            <img src="/image/figure-1-low.png">
           </div>
 
-          <div class="tip"><span class="tiptitle">Tip:</span> 
-                      This is a tip with a code block (not in paragraph) in it: 
+          <p>In this case the sentence, "The following diagram demonstrates...," is contained in the description element. Note that in this case the figure is inserted within the previous paragraph. Note the spacing of elements. Next, we'll repeat the same figure, but not inside the paragraph of this text. To ensure that this paragraph appears on the same page as the next figure, I'm going to insert some extra text. That's what that sentence was about and what this sentence is about also: tricking the system with some extra words that really serve no purpose in life other than taking up space. Compare the spacing. </p>
 
-                      <pre class="codeblock">
-                      First line of codeblock.
-                      Second indented line of codeblock.
-                      Third indented line of codeblock.
-                      </pre>
+          <span class="figdesc">The following diagram demonstrates the program logic when an interface becomes disconnected from its data source. </span>
+
+          <div class="fignone">
+            <span class="figcap">Program flow for data-source reconnection v1</span>
+            <img src="/image/figure-1-low.png">
           </div>
 
-          <div class="caution"><span class="cautiontitle">Caution:</span> 
-                      This is a caution with a code block in it: 
+          <h3>Figures without titles</h3>
+          <p>Though titles are a good idea for figures (and necessary if you want to create a cross reference), you might have a figure without a title. In general, you probably would not have a description either, because such figures should flow from the text. But if you include a description, it will be output. The following figure shows an example of output from the CompDat function in PI DataLink. </p>
 
-                      <pre class="codeblock">
-                      First line of codeblock.
-                      Second indented line of codeblock.
-                      Third indented line of codeblock.
-                      </pre>
+          <div class="fignone">
+            <img src="/image/figure-2-low.png">
           </div>
 
-          <div class="">
+          <p>In this case, the sentence, "The following figure...," is contained in the description element. In this case the figure is inserted within the previous paragraph. Next, we'll repeat the same figure, but inside a separate paragraph. Compare the spacing.</p>
 
-              <h3>Codeblock as list items</h3>
-              <p>This probably isn't frequent. But there have been issues with the bullets and the codeblock lining up correct. Next is an unordered list of codeblock items.</p>
-              <ul>
-                  <li>
-                    <pre class="codeblock">
-                      First codeblock
-                    </pre>
-                  </li>
-                  <li>
-                    <pre class="codeblock">
-                      Always repeat YourName when you are feeling lonely. This is the last line in the code block.
-                    </pre>
-     
+          <p class="figdesc">The following figure shows an example of output from the CompDat function in a PI DataLink worksheet. This was adapted from a screenshot found in the PI DataLink documentation.</p>
 
-                          <ul>
-                            <li>
-                              <pre class="codeblock">
-                                First codeblock
-                              </pre>
-                            </li>
-                            <li>
-                              <pre class="codeblock">
-                                Second codeblock
-                              </pre>
-                            </li>
-                          </ul>
-
-
-                  </li>
-              </ul>
+          <div class="fignone">
+            <img src="/image/figure-2-low.png">
           </div>
-            <h3>Codeblock containing varname</h3>
-            <p>It does weird stuff when the varname tag is used as the first element within the codeblock or anyplace within the codeblock:</p>
-            <pre class="codeblock"><var class="varname">YourName</var> is a wonderful thing.
-                     Say it whenever you can.
-                     It is an affirmation.  
-                     Always repeat 
-                     <var class="varname">YourName</var> when you are feeling lonely.
-                     This is the last line in the code block.</pre>  
-            <p>This repeats the same codeblock, but puts it inside the introductory paragraph: </p>
-            <pre class="codeblock">
-              <var class="varname">YourName</var> is a wonderful thing.
-                        Say it whenever you can.
-                        It is an affirmation.  
-                        Always repeat 
-                        <var class="varname">YourName</var> when you are feeling lonely.
-                        This is the last line in the code block.
-            </pre>
 
-          <div>
-            <h3>Codeblock with spaces for indentation</h3>
-            <p>In some cases, spaces are used within a line to format code. The spaces are essential to the understanding, such as in XML markup: </p> 
-            <pre class="codeblock">
-                        &lt;CustomParameters&gt;
-                        &lt;SineParameters&gt;
-                        &lt;SineCyclePerDay&gt;48&lt;&#47;SineCyclePerDay&gt;
-                        &lt;SineAmplitude&gt;100&lt;&#47;SineAmplitude&gt;
-                        &lt;&#47;SineParameters&gt;
-                        &lt;RandomParameters&gt;
-                        &lt;RandomSpan&gt;200&lt;&#47;RandomSpan&gt;
-                        &lt;&#47;RandomParameters&gt;
-                        &lt;&#47;CustomParameters&gt;
-            </pre>           
-          </div>
-          <div>
-            <p>Indentation can be critical in programming code: </p>
-            <pre class="codeblock">
-              public class RandomCustomParameters : IPluginCustomParameters
-                        {
-                        public SineParam SineParameters { get; set; }
-                        public RandomParam RandomParameters { get; set; }
-                        
-                        public class SineParam
-                        {
-                        public float SineCyclePerDay { get; set; }
-                        public float SineAmplitude { get; set; }
-                        }
-                        
-                        public class RandomParam
-                        {
-                        public float RandomSpan { get; set; }
-                        }
-                        
-                        }
-            </pre>
-          </div>
         </div>
       </div>
     </div>
@@ -276,7 +190,7 @@
     <script>
     $(function(){
 
-      $('#sub-elements >li:nth-child(3)').addClass('active');
+      $('#sub-elements >li:nth-child(5)').addClass('active');
 
       $('.bs-docs-sidenav >li, #sub-elements >li').fadeIn('slow');
 
