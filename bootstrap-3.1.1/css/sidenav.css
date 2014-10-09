@@ -41,7 +41,7 @@
 .bs-docs-sidebar .nav > .active > a,
 .bs-docs-sidebar .nav > .active:hover > a,
 .bs-docs-sidebar .nav > .active:focus > a {
-  padding-left: 20px;
+/*  padding-left: 20px;*/
   /*font-weight: bold;*/
   color: #fff;
   background-color: #999;
@@ -62,13 +62,13 @@
 }
 .bs-docs-sidebar .nav .nav > li > a:hover,
 .bs-docs-sidebar .nav .nav > li > a:focus {
-  padding-left: 29px;
+/*  padding-left: 29px;*/
 }
 .bs-docs-sidebar .nav .nav > .active > a,
 .bs-docs-sidebar .nav .nav > .active:hover > a,
 .bs-docs-sidebar .nav .nav > .active:focus > a {
   font-weight: 500;
-  padding-left: 29px;
+/*  padding-left: 29px;*/
 }
 
 /* Back to top (hidden on mobile) */

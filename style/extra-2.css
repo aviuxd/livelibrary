@@ -957,7 +957,7 @@ dd
     padding-left: 	0.5em;
     padding-top: 	0.5em;
     padding-bottom: 0.5em;
-    white-space: 	pre-line;
+    white-space: 	pre;
 }
 
 .wintitle{
@@ -1155,7 +1155,8 @@ dd
 .cautiontitle:after { content: "  "}
 
 .fignone { 
-  border: 1px solid #0073CF ; 
+  border: 1px solid #b6e2ff; 
+  background-color: #ffeedb;
   padding-left: 8px; 
   padding-top: 5px; 
   padding-bottom: 5px; 

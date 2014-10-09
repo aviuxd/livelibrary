@@ -955,7 +955,7 @@ dd
     padding-left: 	0.5em;
     padding-top: 	0.5em;
     padding-bottom: 0.5em;
-    white-space: 	pre-line;
+    white-space: 	pre;
 }
 
 /*.wintitle{
@@ -1036,9 +1036,9 @@ dd
 }
 .notetitle, .tiptitle, .cautiontitle
 {
+
     display: block;  
     font-weight: bold;
-    font-family: Corbel, Sans-Serif;
 }
 .notetitle:after { content: "  "}
 .notelisttitle { font-weight: bold }
@@ -1057,7 +1057,6 @@ dd
 {
     display: block;
     font-weight: bold;
-    font-family: Corbel, Sans-Serif; 
 }
 .tiptitle:after { content: "  "}
 /*  This is the new way.  Trisoft reverted away from this.
@@ -1141,27 +1140,23 @@ dd
 .cautiontitle:after { content: "  "}
 
 .fignone { 
-  border: 1px solid #0073CF ; 
+  background-color: #ffeedb; 
   padding-left: 8px; 
   padding-top: 5px; 
-  padding-bottom: 5px; 
+  padding-bottom: 10px; 
   margin-bottom: 1.25em; 
   margin-top: 1.25em; 
 } 
 #contentPanel .fignone li {
-	font-family: Corbel, Sans-Serif; 
-	color: #0073CF;
+/*	color: #0073CF;*/
 }
 .figcap {
-	font-family:Corbel, Sans-Serif; 
-	font-style:italic; color: #0073CF; 
+	font-style:italic;  
 	display:block ; text-align: left; 
 	margin-bottom: 0.5em;
 }
 /* DWO changed for table changes */
 .tablecap {
-	font-family:Corbel, Sans-Serif; 
-	font-style:italic; 
 	font-size: 1.0em; 
 	color: #0073CF; 
 	display:block ; 

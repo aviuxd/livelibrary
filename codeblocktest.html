@@ -112,30 +112,27 @@
                       This is a note with a code block inside a paragraph:
 
                       <pre class="codeblock">
-                      First line of codeblock.
-                      Second indented line of codeblock.
-                      Third indented line of codeblock.
-                      </pre>
+First line of codeblock.
+Second indented line of codeblock.
+Third indented line of codeblock.</pre>
           </div>
 
           <div class="tip"><span class="tiptitle">Tip:</span> 
                       This is a tip with a code block (not in paragraph) in it: 
 
                       <pre class="codeblock">
-                      First line of codeblock.
-                      Second indented line of codeblock.
-                      Third indented line of codeblock.
-                      </pre>
+First line of codeblock.
+Second indented line of codeblock.
+Third indented line of codeblock.</pre>
           </div>
 
           <div class="caution"><span class="cautiontitle">Caution:</span> 
                       This is a caution with a code block in it: 
 
                       <pre class="codeblock">
-                      First line of codeblock.
-                      Second indented line of codeblock.
-                      Third indented line of codeblock.
-                      </pre>
+First line of codeblock.
+Second indented line of codeblock.
+Third indented line of codeblock.</pre>
           </div>
 
           <div class="">
@@ -145,25 +142,21 @@
               <ul>
                   <li>
                     <pre class="codeblock">
-                      First codeblock
-                    </pre>
+First codeblock</pre>
                   </li>
                   <li>
                     <pre class="codeblock">
-                      Always repeat YourName when you are feeling lonely. This is the last line in the code block.
-                    </pre>
+Always repeat YourName when you are feeling lonely. This is the last line in the code block.</pre>
      
 
                           <ul>
                             <li>
                               <pre class="codeblock">
-                                First codeblock
-                              </pre>
+First codeblock</pre>
                             </li>
                             <li>
                               <pre class="codeblock">
-                                Second codeblock
-                              </pre>
+Second codeblock</pre>
                             </li>
                           </ul>
 
@@ -174,57 +167,53 @@
             <h3>Codeblock containing varname</h3>
             <p>It does weird stuff when the varname tag is used as the first element within the codeblock or anyplace within the codeblock:</p>
             <pre class="codeblock"><var class="varname">YourName</var> is a wonderful thing.
-                     Say it whenever you can.
-                     It is an affirmation.  
-                     Always repeat 
-                     <var class="varname">YourName</var> when you are feeling lonely.
-                     This is the last line in the code block.</pre>  
+Say it whenever you can.
+It is an affirmation.  
+Always repeat 
+<var class="varname">YourName</var> when you are feeling lonely.
+This is the last line in the code block.</pre>  
             <p>This repeats the same codeblock, but puts it inside the introductory paragraph: </p>
-            <pre class="codeblock">
-              <var class="varname">YourName</var> is a wonderful thing.
-                        Say it whenever you can.
-                        It is an affirmation.  
-                        Always repeat 
-                        <var class="varname">YourName</var> when you are feeling lonely.
-                        This is the last line in the code block.
-            </pre>
+<pre class="codeblock">
+<var class="varname">YourName</var> is a wonderful thing.
+Say it whenever you can.
+It is an affirmation.  
+Always repeat 
+<var class="varname">YourName</var> when you are feeling lonely.
+This is the last line in the code block.</pre>
 
           <div>
             <h3>Codeblock with spaces for indentation</h3>
             <p>In some cases, spaces are used within a line to format code. The spaces are essential to the understanding, such as in XML markup: </p> 
             <pre class="codeblock">
-                        &lt;CustomParameters&gt;
-                        &lt;SineParameters&gt;
-                        &lt;SineCyclePerDay&gt;48&lt;&#47;SineCyclePerDay&gt;
-                        &lt;SineAmplitude&gt;100&lt;&#47;SineAmplitude&gt;
-                        &lt;&#47;SineParameters&gt;
-                        &lt;RandomParameters&gt;
-                        &lt;RandomSpan&gt;200&lt;&#47;RandomSpan&gt;
-                        &lt;&#47;RandomParameters&gt;
-                        &lt;&#47;CustomParameters&gt;
-            </pre>           
+&lt;CustomParameters&gt;
+    &lt;SineParameters&gt;
+      &lt;SineCyclePerDay&gt;48&lt;&#47;SineCyclePerDay&gt;
+      &lt;SineAmplitude&gt;100&lt;&#47;SineAmplitude&gt;
+    &lt;&#47;SineParameters&gt;
+    &lt;RandomParameters&gt;
+        &lt;RandomSpan&gt;200&lt;&#47;RandomSpan&gt;
+    &lt;&#47;RandomParameters&gt;
+&lt;&#47;CustomParameters&gt;</pre>           
           </div>
           <div>
             <p>Indentation can be critical in programming code: </p>
             <pre class="codeblock">
-              public class RandomCustomParameters : IPluginCustomParameters
-                        {
-                        public SineParam SineParameters { get; set; }
-                        public RandomParam RandomParameters { get; set; }
-                        
-                        public class SineParam
-                        {
-                        public float SineCyclePerDay { get; set; }
-                        public float SineAmplitude { get; set; }
-                        }
-                        
-                        public class RandomParam
-                        {
-                        public float RandomSpan { get; set; }
-                        }
-                        
-                        }
-            </pre>
+public class RandomCustomParameters : IPluginCustomParameters
+{
+  public SineParam SineParameters { get; set; }
+  public RandomParam RandomParameters { get; set; }
+
+  public class SineParam
+  {
+    public float SineCyclePerDay { get; set; }
+    public float SineAmplitude { get; set; }
+  }
+
+  public class RandomParam
+  {
+    public float RandomSpan { get; set; }
+  }
+}</pre>
           </div>
         </div>
       </div>

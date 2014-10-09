@@ -9,6 +9,7 @@
     htmlVar += '<li style="display:none; text-align:initial;"><a href="codeblocktest.html">Codeblock Tests</a></li>';
     htmlVar += '<li style="display:none; text-align:initial;"><a href="codeblocktest-2.html">Codeblock Tests (option 2)</a></li>';
     htmlVar += '<li style="display:none; text-align:initial;"><a href="figureswithdescription.html">Figures With Description</a></li>';
+    htmlVar += '<li style="display:none; text-align:initial;"><a href="tableswithdescriptions.html">Tables With Descriptions</a></li>';
 
 
 
