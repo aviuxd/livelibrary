@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="image/favicon.ico">
+
+    <title>Protect piadmin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.1.1/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap-3.1.1/css/dashboard.css" rel="stylesheet">
+
+    <!-- SideNave for these pages No LESS available for this CSS, copied as is from Bootstrap Docs-->
+     <link href="bootstrap-3.1.1/css/sidenav.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style type="text/css" id="holderjs-style"></style></head>
+
+  <body>
+
+
+    <div class="wrap"> <!-- really large div wrapping, header and content, leaving out the footer-->
+      
+    <div class="navbar navbar-osi" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">PI Live Library</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right nav-link-osi">
+<!--             <li><a href="#">Dashboard</a></li> -->
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+<!-- Breadcrumb and Search Interaction
+============================================================================ -->
+<!--     <div class="container">
+      <div class="row" >
+        <div class="col-lg-8">
+          <ol class="breadcrumb">
+            <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li><span class="glyphicon glyphicon-play"></span> -->
+<!--             <li><a href="#">Library</a></li><span class="glyphicon glyphicon-play"></span>
+            <li class="active">Data</li> -->
+<!--           </ol>
+        </div>
+        <div class="col-lg-4">
+          <form class="navbar-form navbar-right">
+            <input class="form-control" placeholder="Search Live Library..." type="text">
+            <button type="button" class="btn btn-default btn-search"><span class="glyphicon glyphicon-search"></span></button>
+          </form>
+        </div>
+      </div>
+    </div> -->
+
+<!-- Filter 
+============================================================================ -->
+    <div class="container osi-filter-container">
+      <div class="row">
+      <!--  -->
+        <div class="col-xs-8"> 
+          <ul class="osi-filter-ul" style=" ">
+            <li class="btn btn-filter osi-filteractive-button">All</li>
+            <li class="btn btn-filter">Server</li>
+            <li class="btn btn-filter">Visualization</li>
+            <li class="btn btn-filter">Interfaces & Connectors</li>
+            <li class="btn btn-filter">Developer Technologies</li>
+            <li class="btn btn-filter">Integrators</li>
+          </ul>
+        </div>
+        <div class="col-xs-4">
+          <form class="navbar-form navbar-right">
+            <input class="form-control" placeholder="Search Live Library..." type="text">
+            <button type="button" class="btn btn-default btn-search"><span class="glyphicon glyphicon-search"></span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Main Page content with 3 columns
+============================================================================ -->
+    <div class="container main main-position">
+
+
+    <!-- 1st Product Family-->
+      <div class="row osi-family-padding">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <h3>PI Server</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="osi-landing-tile">
+            <h4>Server</h4>
+            <p>PI Data Archive, PI AF, PI System Explorer, PI Builder, PI SMT</p>
+            <a href="#">View Documentation</a>
+          </div>
+        </div>
+
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="osi-landing-tile">
+            <h4>Glossary</h4>
+            <p>Glossary for OSIsoft PI family of products</p>
+            <a href="#">View Documentation</a>
+          </div>
+        </div>
+      </div><!-- End First Product family--> 
+
+
+    <!-- 2nd Product Family-->
+      <div class="row osi-family-padding">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <h3>PI Visualization</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="osi-landing-tile">
+            <h4>ActiveView</h4>
+            <p>Display PI System data as ActiveX controls in MS Office</p>
+            <a href="#">View Documentation</a>
+          </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="osi-landing-tile">
+            <h4>BatchView</h4>
+            <p>View live and historical batch data in ActiveX controls</p>
+            <a href="#">View Documentation</a>
+          </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="osi-landing-tile">
+            <h4>Coresight</h4>
+            <p>Create and share web-based displays of PI System data</p>
+            <a>View Documentation</a>
+          </div>
+        </div>
+      </div><!-- End 2nd Product family--> 
+    <!-- 2nd line 2nd Product Family-->
+      <div class="row osi-second-line">
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="osi-landing-tile">
+            <h4>DataLink</h4>
+            <p>Use Excel to view, report, and analyze PI System data</p>
+            <a>View Documentation</a>
+          </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="osi-landing-tile">
+            <h4>SQC</h4>
+            <p>Produce statistical control charts in ProcessBook add-in</p>
+            <a>View Documentation</a>
+          </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="osi-landing-tile">
+            <h4>WebParts</h4>
+            <p>Use SharePoint to make and share views of PI System data</p>
+            <a>View Documentation</a>
+          </div>
+        </div>
+      </div><!-- End 2nd line 2nd Product family--> 
+
+
+
+    <!-- 3rd Product Family: line-1-->
+      <div class="row osi-family-padding">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <h3>Interfaces & Connectors</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="osi-landing-tile">
+            <h4>CygNet</h4>
+            <p>Read, model, and archive data from CygNet data sources</p>
+            <a>View Documentation</a>
+          </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="osi-landing-tile">
+            <h4>Modbus</h4>
+            <p>Read and archive data from Modbus data sources</p>
+            <a>View Documentation</a>
+          </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="osi-landing-tile">
+            <h4>RDBMS</h4>
+            <p>Send data between PI System and relational databases</p>
+            <a>View Documentation</a>
+          </div>
+        </div>
+      </div><!-- 3rd Product Family: line-1--> 
+    <!-- 3rd Product Family: line-2-->
+      <div class="row osi-second-line">
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="osi-landing-tile">
+            <h4>SNMP</h4>
+            <p>Read and archive data from SNMP data sources</p>
+            <a>View Documentation</a>
+          </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="osi-landing-tile">
+            <h4>TCP Response</h4>
+            <p>Read and archive TCP/IP network response time data</p>
+            <a>View Documentation</a>
+          </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="osi-landing-tile">
+            <h4>UFL</h4>
+            <p>Read and archive data from ASCII data sources</p>
+            <a>View Documentation</a>
+          </div>
+        </div>
+      </div><!-- 3rd Product Family: line-2-->
+
+
+
+    <!-- 4th Product Family: line-1-->
+      <div class="row osi-family-padding">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <h3>PI Developer Technologies</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="osi-landing-tile">
+            <h4>for StreamInsight</h4>
+            <p>Access PI Data Archive through Microsoft StreamInsight</p>
+            <a>View Documentation</a>
+          </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="osi-landing-tile">
+            <h4>JDBC</h4>
+            <p>Use SQL queries to access PI System with a JDBC driver</p>
+            <a>View Documentation</a>
+          </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="osi-landing-tile">
+            <h4>SQL Commander</h4>
+            <p>Use SQL queries in an application to navigate PI System</p>
+            <a>View Documentation</a>
+          </div>
+        </div>
+      </div><!-- 4th Product Family: line-1--> 
+    <!-- 4th Product Family: line-2-->
+      <div class="row osi-second-line">
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="osi-landing-tile">
+            <h4>Web Services</h4>
+            <p>Transmit PI System data through Internet protocols</p>
+            <a>View Documentation</a>
+          </div>
+        </div>
+      </div><!-- 4th Product Family: line-2-->
+
+
+
+
+    <!-- 5th Product Family: line-1-->
+      <div class="row osi-family-padding">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <h3>PI Integrators</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="osi-landing-tile">
+            <h4>Integrator for ESRI</h4>
+            <p>Supply PI System data to geomaps built in ESRI ArcGIS</p>
+            <a>View Documentation</a>
+          </div>
+        </div>
+      </div><!-- 4th Product Family: line-1--> 
+
+
+
+    </div><!-- Important: end of 3 column main div -->
+
+
+
+    </div> <!-- end of REALLY LARGE DIV wrapping header and content to create 100% tall pages.-->
+
+
+
+    <div class="footer" >
+      <div class="container">
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <ul class="footer-link">
+              <li><a href="#">OSIsoft Home</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">vCampus</a></li>
+              <li><a href="#">Learning</a></li>
+              <li><a href="#">OSIsoft Youtube Channel</a></li>
+              <li><a href="#">Worldwide Locations</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <ul class="footer-link">
+              <li><a href="#">Technical Support</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Copyright</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <p>For 30 years and over 10,000 installations worldwide, OSIsoft has gathered and created an abundance of information and technical expertise. Here, we provide our customers and visitors with access to a shared library of those resources.</p>
+          </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/docs.js"></script>
+    <script src="js/insert.js"></script>
+
+    <script>
+    $(function(){
+
+      $('.bs-docs-sidenav >li:nth-child(2)').addClass('active');
+
+      $('.bs-docs-sidenav >li').fadeIn('slow');
+
+    });
+    </script>
+
+</body></html>

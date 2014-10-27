@@ -4,6 +4,19 @@
 
 //Media Query to handle fonts for Chrome on WinXX
 //=========================================================
+
+@btn-search-background:	#39978C;
+@btn-search-border:		darken(#39978C, 8%);
+
+@btn-filter-background: #fff;
+@btn-filter-border:		#fff;
+
+@btn-filteractive-background:	@btn-search-background;
+@btn-filteractive-border:		@btn-search-border;
+
+
+//Media Query to handle fonts for Chrome on WinXX
+//=========================================================
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 
 	@font-face {
@@ -85,15 +98,13 @@ p, li{
 }
 
 
-
-@btn-search-background:	#39978C;
-@btn-search-border:		darken(#39978C, 8%);
-
 .btn-search{
 	border-radius: 	0px;
 	margin-left:  	-6px;
 	.button-variant(#fff, @btn-search-background, @btn-search-border);
 }
+
+
 
 
 //Custom Font definitions for Bold and Italics
@@ -130,11 +141,52 @@ i{
 	border: 		1px solid #39978C;
 }
 
-// .btn-search{
-// 	border-radius: 	0px;
-// 	color: 				#fff;
-// 	background-color:	#39978C; 
-// }
+
+//List stylings for Webkit browsers : Need to make the padding start 0px for these browsers and add padding as and when required.
+//==========================================================
+
+.osi-filter-container{
+	position: relative;
+	z-index: 100;
+}
+
+.osi-filter-ul{
+	list-style: none; 
+	display: block; 
+}
+
+ul{
+	-webkit-padding-start: 0px;
+	padding-left: 0px;
+}
+
+.btn-filter{
+	padding: 6px 4px;
+	.button-variant(#769cb1, @btn-filter-background, @btn-filter-border)
+}
+
+.osi-filteractive-button{
+	.button-variant(#fff, @btn-filteractive-background, @btn-filteractive-border);
+}
+
+@osi-landing-padding: 	40px;
+
+.osi-family-padding{
+	padding-top: 		@osi-landing-padding;
+}
+
+.osi-second-line{
+	padding-top: 		ceil(@osi-landing-padding/2);
+}
+
+.osi-landing-tile{
+	width: 		85%;
+	p{
+		text-align:		initial; 
+	}
+}
+
+
 
 //Fix for footer to the bottom of the page
 //==========================================================
@@ -151,5 +203,10 @@ html, body{
 	overflow:		auto;
 	padding-bottom: 260px;
 
+}
+
+.main-position{
+	position:	relative;
+	top: 		-50px;
 }
 
