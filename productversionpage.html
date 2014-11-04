@@ -31,8 +31,9 @@
 
   <body>
 
-  <div class="wrap"> <!-- really large div wrapping, header and content, leaving out the footer-->
 
+<div class="wrap"> <!-- really large div wrapping, header and content, leaving out the footer-->
+      
     <div class="navbar navbar-osi" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -46,6 +47,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right nav-link-osi">
+<!--             <li><a href="#">Dashboard</a></li> -->
             <li><a href="#">Settings</a></li>
             <li><a href="#">Profile</a></li>
             <li><a href="#">Help</a></li>
@@ -56,10 +58,9 @@
       </div>
     </div>
 
-
 <!-- Breadcrumb and Search Interaction
 ============================================================================ -->
-    <div class="container">
+    <div class="container osi-filter-container">
       <div class="row" >
         <div class="col-lg-8">
           <ol class="breadcrumb">
@@ -78,55 +79,108 @@
     </div>
 
 
-<!-- Page Header
+<!-- Main Page content with 3 columns
 ============================================================================ -->
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-            <h1 class="page-header">PI Server</h1>
+    <div class="container main main-position">
+      
+      <div class="row osi-family-padding">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <h3>Coresight</h3>
+          <p>PI Data Archive, PI AF, PI System Explorer, PI Builder, PI SMT</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus elementum blandit. Suspen- disse sed nisi velit. Cras nisi tortor, sodales sed ornare in, volutpat nec orci. Duis eu placerat purus, ac volutpat lorem.</p>
         </div>
       </div>
-    </div>
 
-<!-- Sidenav and Content
-============================================================================ -->
-    <div class="container main">
-      <div class="row">
-        <div class="col-xs-4 col-sm-4 col-md-3">
+      <div class="table-responsive">
+        <table class="table">
+            <thead>
+              <tr>
+                <td>Prerelease</td>
+                <td colspan="3">&nbsp;</td>
+              </tr>
+            </thead>
+          <tbody>
+            <tr>
+              <td>Coresight 2014</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-versions">
+            <thead>
+              <tr>
+                <td>Released Version</td>
+                <td>Build</td>
+                <td>Release Date</td>
+                <td>Last Update</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Coresight 2013</td>
+                <td>1.3.0.0</td>
+                <td>08-15-2013</td>
+                <td>08-15-2013</td>
+              </tr>
+              <tr>
+                <td>Coresight 2012 R2</td>
+                <td>1.2.0.0</td>
+                <td>04-25-2012</td>
+                <td>04-25-2012</td>
+              </tr>
+              <tr>
+                <td>Coresight 2012</td>
+                <td>1.1.0.0</td>
+                <td>09-12-2012</td>
+                <td>09-12-2012</td>
+              </tr>
+              <tr>
+                <td>Coresight 2011</td>
+                <td>1.0.0.0</td>
+                <td>05-30-2011</td>
+                <td>05-30-2011</td>
+              </tr>
+              <tr>
+                <td>Coresight 2010</td>
+                <td>0.9.0.0</td>
+                <td>02-30-2010</td>
+                <td>02-30-2010</td>
+              </tr>
+              <tr>
+                <td>Coresight 2010</td>
+                <td>0.8.5.0</td>
+                <td>08-30-2010</td>
+                <td>08-30-2010</td>
+              </tr>
+              <tr>
+                <td>Coresight 2009</td>
+                <td>0.8.0.0</td>
+                <td>04-21-2009</td>
+                <td>04-21-2009</td>
+              </tr>
+              <tr>
+                <td>Coresight 2008</td>
+                <td>0.7.5.0</td>
+                <td>04-30-2008</td>
+                <td>04-30-2008</td>
+              </tr>
+          </tbody>
+        </table>
+      </div> <!-- end Table Responsive--> 
 
-          <div class="bs-docs-sidebar hidden-print affix" role="complementary">
-            <ul class="nav bs-docs-sidenav">
-                          
-                          
-            </ul>
-          </div>
-        </div>
-        <div class="col-xs-8 col-sm-8 col-md-9">
 
 
-          <h2 class="sub-header">Protect piadmin</h2>
-
-            <p>The piadmin PI user is the PI Server super-user account. Take the following basic measures to protect this powerful account:
-
-              <ul>
-                <li >Disable explicit logins for the piadmin account (<a href="#">Disable explicit logins for piadmin</a>). Explicit logins (also called password authentication) on the PI Server are not nearly as secure as Windows authentication or PI trusts. Instead, control access to this account through Windows authentication. </li>
-                <li >If you cannot disable explicit logins for the piadmin account, then at least make sure that the piadmin account does not have a blank password. New PI Server installations require a password for piadmin. While this is not mandatory for upgrades, it is strongly recommended. </li>
-                <li >Restrict piadmin access to a small group of trusted administrators. </li>
-              </ul>
-
-              <div class="well">Note: Do not use piadmin for normal administrative tasks. See <a href="">The piadmin user</a> for more information.</div>
-
-            </p>
-        </div>
-      </div>
-    </div>
-
-  </div> <!-- end of REALLY LARGE DIV wrapping header and content-->
+    </div> <!-- End of Main Container -->
 
 
-    <div class="footer">
+</div> <!-- end of REALLY LARGE DIV wrapping header and content to create 100% tall pages.-->
+
+
+
+    <div class="footer" >
       <div class="container">
-        <div class="row">
           <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <ul class="footer-link">
               <li><a href="#">OSIsoft Home</a></li>
@@ -150,9 +204,9 @@
           <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <p>For 30 years and over 10,000 installations worldwide, OSIsoft has gathered and created an abundance of information and technical expertise. Here, we provide our customers and visitors with access to a shared library of those resources.</p>
           </div>
-        </div>
       </div>
     </div>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -162,14 +216,14 @@
     <script src="js/docs.js"></script>
     <script src="js/insert.js"></script>
 
-    <script>
+    <!--<script>
     $(function(){
 
-      $('.bs-docs-sidenav >li:nth-child(3)').addClass('active');
+      $('.bs-docs-sidenav >li:nth-child(2)').addClass('active');
 
       $('.bs-docs-sidenav >li').fadeIn('slow');
 
     });
-    </script>
+    </script>-->
 
 </body></html>

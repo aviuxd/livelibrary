@@ -1,14 +1,14 @@
 @font-face {
-  font-family: ProximaNovaRegular;
-  src: url('../../fonts/Proxima-Nova-Regular.otf') format('opentype'), url('../../fonts/proxima-nova-semibold.svg') format('svg');
+  font-family: 'ProximaNovaRegular';
+  src: url('../../fonts/proxima-nova-regular.eot?#iefix') format('embedded-opentype'), url('../../fonts/proxima-nova-regular.woff') format('woff'), url('../../fonts/proxima-nova-regular.ttf') format('truetype'), url('../../fonts/proxima-nova-regular.svg#svgProximaNovaRegular') format('svg');
 }
 @font-face {
-  font-family: ProximaNovaSemibold;
-  src: url('../../fonts/Proxima-Nova-Semibold.otf') format('opentype'), url('../../fonts/proxima-nova-regular.svg') format('svg');
+  font-family: 'ProximaNovaSemibold';
+  src: url('../../fonts/proxima-nova-semibold.eot?#iefix') format('embedded-opentype'), url('../../fonts/proxima-nova-semibold.woff') format('woff'), url('../../fonts/proxima-nova-semibold.ttf') format('truetype'), url('../../fonts/proxima-nova-semibold.svg#svgProximaNovaSemibold') format('svg');
 }
 @font-face {
-  font-family: ProximaNovaItalics;
-  src: url('../../fonts/Proxima-Nova-Regular-Italic.otf') format('opentype'), url('../../fonts/proxima-nova-regular-italic.svg') format('svg');
+  font-family: 'ProximaNovaItalic';
+  src: url('../../fonts/proxima-nova-regular-italic.eot?#iefix') format('embedded-opentype'), url('../../fonts/proxima-nova-regular-italic.woff') format('woff'), url('../../fonts/proxima-nova-regular-italic.ttf') format('truetype'), url('../../fonts/proxima-nova-regular-italic.svg#svgProximaNovaItalic') format('svg');
 }
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
@@ -6009,6 +6009,12 @@ fieldset[disabled] .osi-filteractive-button.active {
 .osi-landing-tile p {
   text-align: initial;
 }
+.category-icons {
+  width: 46px;
+  height: auto;
+  padding-right: 10px;
+  margin-top: -5px;
+}
 html,
 body {
   height: 100%;
@@ -6023,6 +6029,38 @@ body {
 .main-position {
   position: relative;
   top: -50px;
+}
+.table-versions .table > thead > tr > td.prerelease,
+.table-versions .table > tbody > tr > td.prerelease,
+.table-versions .table > tfoot > tr > td.prerelease,
+.table-versions .table > thead > tr > th.prerelease,
+.table-versions .table > tbody > tr > th.prerelease,
+.table-versions .table > tfoot > tr > th.prerelease,
+.table-versions .table > thead > tr.prerelease > td,
+.table-versions .table > tbody > tr.prerelease > td,
+.table-versions .table > tfoot > tr.prerelease > td,
+.table-versions .table > thead > tr.prerelease > th,
+.table-versions .table > tbody > tr.prerelease > th,
+.table-versions .table > tfoot > tr.prerelease > th {
+  background-color: #999999;
+}
+.table-versions .table-hover > tbody > tr > td.prerelease:hover,
+.table-versions .table-hover > tbody > tr > th.prerelease:hover,
+.table-versions .table-hover > tbody > tr.prerelease:hover > td,
+.table-versions .table-hover > tbody > tr.prerelease:hover > th {
+  background-color: #8c8c8c;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  border-top: 0px;
+}
+.table > thead > tr > th,
+.table > thead > tr > td {
+  border-bottom: 1px solid #dddddd;
 }
 .footer {
   color: #fff;

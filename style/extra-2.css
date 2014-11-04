@@ -989,16 +989,16 @@ dd
 }
 
 .note{
-	background-color: #def2ff; /*light blue*/
-	border: 1px solid #b6e2ff;
+	background-color: #c7e8ff; /*light blue*/
+	border: 1px solid #a7d6ec;
 }
 .caution{
-	background-color: #ffe4e4; /*light red*/  /*#ffeedb; /*light orange*/
-	border: 1px solid #f3b1b1;
+	background-color: #ffe1e0; /*light red*/  /*#ffeedb; /*light orange*/
+	border: 1px solid #ffb7b4;
 }
 .tip{
-	background-color: #e4f8ef; /*light green*/
-	border: 1px solid #b0e1cb;
+	background-color: #c2e8d7; /*light green*/
+	border: 1px solid #8fe2bd;
 }
 
 /*.tip .codeblock{

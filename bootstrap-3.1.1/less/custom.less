@@ -162,7 +162,7 @@ ul{
 
 .btn-filter{
 	padding: 6px 4px;
-	.button-variant(#769cb1, @btn-filter-background, @btn-filter-border)
+	.button-variant(#769cb1, @btn-filter-background, @btn-filter-border);
 }
 
 .osi-filteractive-button{
@@ -186,6 +186,12 @@ ul{
 	}
 }
 
+.category-icons{
+	width: 			46px;
+	height: 		auto;
+	padding-right: 	10px;
+	margin-top: 	-5px;
+}
 
 
 //Fix for footer to the bottom of the page
@@ -210,3 +216,23 @@ html, body{
 	top: 		-50px;
 }
 
+//Table Styling
+//==========================================================
+
+.table-versions{
+	.table-row-variant(prerelease;#999999);
+}
+
+.table > thead > tr > th, 
+.table > tbody > tr > th, 
+.table > tfoot > tr > th, 
+.table > thead > tr > td, 
+.table > tbody > tr > td, 
+.table > tfoot > tr > td{
+	border-top: 0px;
+}
+
+.table > thead > tr > th,
+.table > thead > tr > td{
+	border-bottom:	1px solid #dddddd;
+}

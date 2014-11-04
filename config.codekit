@@ -2478,6 +2478,72 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/image\/images\/category-icons_03.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 670,
+		"inputAbbreviatedPath": "\/image\/images\/category-icons_03.png",
+		"outputAbbreviatedPath": "\/image\/images\/category-icons_03.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/image\/images\/category-icons_05.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 320,
+		"inputAbbreviatedPath": "\/image\/images\/category-icons_05.png",
+		"outputAbbreviatedPath": "\/image\/images\/category-icons_05.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/image\/images\/category-icons_07.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 518,
+		"inputAbbreviatedPath": "\/image\/images\/category-icons_07.png",
+		"outputAbbreviatedPath": "\/image\/images\/category-icons_07.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/image\/images\/category-icons_09.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 484,
+		"inputAbbreviatedPath": "\/image\/images\/category-icons_09.png",
+		"outputAbbreviatedPath": "\/image\/images\/category-icons_09.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/image\/images\/category-icons_11.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 676,
+		"inputAbbreviatedPath": "\/image\/images\/category-icons_11.png",
+		"outputAbbreviatedPath": "\/image\/images\/category-icons_11.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/image\/images\/category-icons_13.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 584,
+		"inputAbbreviatedPath": "\/image\/images\/category-icons_13.png",
+		"outputAbbreviatedPath": "\/image\/images\/category-icons_13.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/image\/linkedin.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2485,6 +2551,17 @@
 		"initialSize": 471,
 		"inputAbbreviatedPath": "\/image\/linkedin.png",
 		"outputAbbreviatedPath": "\/image\/linkedin.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/image\/logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5824,
+		"inputAbbreviatedPath": "\/image\/logo.png",
+		"outputAbbreviatedPath": "\/image\/logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2671,6 +2748,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/piconfigcommand.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/productversionpage.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/productversionpage.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
