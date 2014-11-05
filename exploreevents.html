@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="image/favicon.ico">
 
-    <title>Explore events related to an element</title>
+    <title>LiveLibrary Demo</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-3.1.1/css/bootstrap.css" rel="stylesheet">
@@ -99,88 +99,103 @@
         </div>
         <div class="col-xs-8 col-sm-8 col-md-9">
 
+          <div class="row">
+              <div class="col-xs-9 col-sm-9 col-md-9">
+                <h2 class="osi-sub-header pull-left">Explore events related to an element</h2>
+              </div>
 
-          <h2 class="sub-header">Explore events related to an element</h2>
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <ul class="pdf-print-email">
+                  <li><img src="image/pdf.png"></li>
+                  <li><img src="image/print.png"></li>
+                  <li><img src="image/email.png"></li>
+                </ul>
+              </div>
+          </div>
 
-            <p>You can use the Explore Events function to explore and analyze events related to a particular PI AF element. For example, suppose you want to analyze the downtime of a particular boiler. You can retrieve all the downtime events for that boiler into Microsoft Excel and create a chart to analyze the data. In this case, you might find events that match an element name and event name. 
-            </p>
-            <h3>Procedure</h3>
-            <ol>
-              <li>
-                Select a cell in the worksheet where you want PI DataLink to start inserting the function array that contains the events. 
-              </li>
-              <li>
-                On the PI DataLink tab, in the Events group, click Explore to open the Explore Events task pane.  
-              </li>
-              <li>
-                Specify the criteria to find the events you are interested in. As you enter criteria, the Preview list updates to show the events that match the entered criteria.
-                <ol type="a">
-                  <li>In the Database field, enter the PI AF database that stores the events. <br>
-                  Specify in the format <i>\\ ServerName\ DatabaseName</i>. Click the field to open a list of databases that contain event templates in connected PI AF servers. </li>
-                  <li>In the Search start and Search end fields specify the time period that you want to search for active events. <br>
-                      Enter a PI time expression. For example, to retrieve events that were active during the last month, enter *-1mo in the Search start field and * in the Search end field. 
-                      <div class="well">Tip: To find events with a more specific relationship to this time period, such as events that started or ended during this time period, expand More search options and select an alternative method from the Search mode list. </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+
+                <p>You can use the Explore Events function to explore and analyze events related to a particular PI AF element. For example, suppose you want to analyze the downtime of a particular boiler. You can retrieve all the downtime events for that boiler into Microsoft Excel and create a chart to analyze the data. In this case, you might find events that match an element name and event name. 
+                </p>
+                <h3>Procedure</h3>
+                <ol>
+                  <li>
+                    Select a cell in the worksheet where you want PI DataLink to start inserting the function array that contains the events. 
                   </li>
                   <li>
-                      As necessary, specify additional criteria to refine the events that the function returns (shown in the Preview list).<br>
-                      See <a href="#">Explore Events task-pane reference</a> for a complete list of available fields.<br>
-                      For example, use the Event name field to limit returned events to those with a particular name. You might enter *shut* to find all events that contain shut in their name, such as shutdown and BoilerShutdown. If you leave the default entry, * , the function will find events with any name. <br>
-                      Similarly, use the Element name field to limit returned events to those associated with particular elements. You might enter Boiler5 to analyze events associated with that boiler. <br>
+                    On the PI DataLink tab, in the Events group, click Explore to open the Explore Events task pane.  
                   </li>
-                </ol> <!-- End of nested bullets-->
-              </li>
-              <li>
-                  Specify the worksheet output: 
-                  <ol type="a">
-                    <li>
-                      From the Columns to display list, select the columns to include in the function array and set the column order. <br>
-                      The list contains the names of attributes. By default, the list includes the virtual attributes generated for all events and the event attributes from the selected event template. You can: <br>
-                      <ul>
-                          <li>
-                            Select the Select all check box to include all the listed attributes as columns in the returned function array. 
-                          </li>
-                          <li>
-                            Select a check box to include the attribute, or clear a check box to exclude an attribute as a column in the returned function array. 
-                          </li>
-                          <li>
-                            Click <img src="image/add-attribute.png"> to open the Add Attributes window where you can select additional attributes to include as columns in the function array. See <a href="#">Add attribute columns to the Explore Events task pane</a>. 
-                          </li>
-                          <li>
-                             Type the name of an event attribute next to the blank check box at the bottom of the list. 
-                          </li>
-                          <li>
-                            Right-click an attribute, click <strong>Insert attribute</strong> to insert a blank attribute above the selected attribute, and then type the name of an event attribute. 
-                          </li>
-                          <li>
-                            Select an attribute and click <img src="image/arrow-up.png"> to move the attribute up in the list. 
-                          </li>
-                          <li>
-                            Select an attribute and click <img src="image/arrow-down.png"> to move the attribute down in the list. 
-                          </li>
-                          <li>
-                            Select an attribute and click <img src="image/remove.png"> to remove the attribute from the list. 
-                          </li>
-                          <li>
-                            Right-click an attribute and then click <strong>Delete attribute</strong> to remove the attribute from the list. 
-                          </li>
-                      </ul>
-                    </li>
-                    <li>
-                      Verify that the <strong>Output cell</strong> field contains the worksheet cell where you want to insert the top-left corner of the function array. <br>
+                  <li>
+                    Specify the criteria to find the events you are interested in. As you enter criteria, the Preview list updates to show the events that match the entered criteria.
+                    <ol type="a">
+                      <li>In the Database field, enter the PI AF database that stores the events. <br>
+                      Specify in the format <i>\\ ServerName\ DatabaseName</i>. Click the field to open a list of databases that contain event templates in connected PI AF servers. </li>
+                      <li>In the Search start and Search end fields specify the time period that you want to search for active events. <br>
+                          Enter a PI time expression. For example, to retrieve events that were active during the last month, enter *-1mo in the Search start field and * in the Search end field. 
+                          <div class="well">Tip: To find events with a more specific relationship to this time period, such as events that started or ended during this time period, expand More search options and select an alternative method from the Search mode list. </div>
+                      </li>
+                      <li>
+                          As necessary, specify additional criteria to refine the events that the function returns (shown in the Preview list).<br>
+                          See <a href="#">Explore Events task-pane reference</a> for a complete list of available fields.<br>
+                          For example, use the Event name field to limit returned events to those with a particular name. You might enter *shut* to find all events that contain shut in their name, such as shutdown and BoilerShutdown. If you leave the default entry, * , the function will find events with any name. <br>
+                          Similarly, use the Element name field to limit returned events to those associated with particular elements. You might enter Boiler5 to analyze events associated with that boiler. <br>
+                      </li>
+                    </ol> <!-- End of nested bullets-->
+                  </li>
+                  <li>
+                      Specify the worksheet output: 
+                      <ol type="a">
+                        <li>
+                          From the Columns to display list, select the columns to include in the function array and set the column order. <br>
+                          The list contains the names of attributes. By default, the list includes the virtual attributes generated for all events and the event attributes from the selected event template. You can: <br>
+                          <ul>
+                              <li>
+                                Select the Select all check box to include all the listed attributes as columns in the returned function array. 
+                              </li>
+                              <li>
+                                Select a check box to include the attribute, or clear a check box to exclude an attribute as a column in the returned function array. 
+                              </li>
+                              <li>
+                                Click <img src="image/add-attribute.png"> to open the Add Attributes window where you can select additional attributes to include as columns in the function array. See <a href="#">Add attribute columns to the Explore Events task pane</a>. 
+                              </li>
+                              <li>
+                                 Type the name of an event attribute next to the blank check box at the bottom of the list. 
+                              </li>
+                              <li>
+                                Right-click an attribute, click <strong>Insert attribute</strong> to insert a blank attribute above the selected attribute, and then type the name of an event attribute. 
+                              </li>
+                              <li>
+                                Select an attribute and click <img src="image/arrow-up.png"> to move the attribute up in the list. 
+                              </li>
+                              <li>
+                                Select an attribute and click <img src="image/arrow-down.png"> to move the attribute down in the list. 
+                              </li>
+                              <li>
+                                Select an attribute and click <img src="image/remove.png"> to remove the attribute from the list. 
+                              </li>
+                              <li>
+                                Right-click an attribute and then click <strong>Delete attribute</strong> to remove the attribute from the list. 
+                              </li>
+                          </ul>
+                        </li>
+                        <li>
+                          Verify that the <strong>Output cell</strong> field contains the worksheet cell where you want to insert the top-left corner of the function array. <br>
 
-                      If you clicked a cell before opening the task pane, PI DataLink automatically inserts that cell into this field. 
-                    </li>
-                  </ol>
-              </li>
-              <li>
-                Click <strong>OK</strong> to insert the function array into the worksheet. <br>
-                <img src="image/table-example.png">
-              </li>
-            </ol>
-            <h3>After you finish</h3>
-              <p>Use Excel features to analyze your data. For example, you might create a chart. 
-              </p>
-
+                          If you clicked a cell before opening the task pane, PI DataLink automatically inserts that cell into this field. 
+                        </li>
+                      </ol>
+                  </li>
+                  <li>
+                    Click <strong>OK</strong> to insert the function array into the worksheet. <br>
+                    <img src="image/table-example.png">
+                  </li>
+                </ol>
+                <h3>After you finish</h3>
+                  <p>Use Excel features to analyze your data. For example, you might create a chart. 
+                  </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -228,7 +243,7 @@
     <script>
     $(function(){
 
-      $('.bs-docs-sidenav >li:nth-child(7)').addClass('active');
+      $('.bs-docs-sidenav >li:nth-child(8)').addClass('active');
 
       $('.bs-docs-sidenav >li').fadeIn('slow');
 

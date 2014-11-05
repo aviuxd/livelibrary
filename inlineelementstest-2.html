@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="image/favicon.ico">
 
-    <title>PI Live Library</title>
+    <title>LiveLibrary Demo</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-3.1.1/css/bootstrap.css" rel="stylesheet">
@@ -103,44 +103,62 @@
         </div>
         <div class="col-xs-8 col-sm-8 col-md-9">
 
-          <h2 class="sub-header">Inline Elements Test</h2>
-          <p>
-            This topic contains some inline elements like <span class="uicontrol">uicontrol</span> , followed by <span class="cmdname">cmdname</span>, followed by <span class"parmname">parmname</span>, followed by <span class="option">option</span>, followed by <span class="codeph">codeph</span> , followed by <span class="userinput">userinput</span> , followed by <span class="apiname">apiname</span>, followed by <span class="wintitle">Wintitle</span>, followed by an independent <var class="varname">varname</var>, and then a <var class="varname">varname</var> inside <span class="userinput">userinput</span>.
-          </p>
-          
-          <p>
-            Use of inline elements like, uicontrol introduce extra spaces. This becomes particularly problematic with commas: <span class="uicontrol">first</span> , <span class="uicontrol">second</span> , and <span class="uicontrol">third</span>. 
-          </p>
-          
-          <p>This happens with all inline elements, such as <span class="codeph">codeph</span> : </p>
-          
-          <p>this might be used for a list like <span class="codeph">sinusoid</span> , <span class="codeph">sinusoidu</span>, and <span class="codeph">cdt158</span>. Also for <span class="cmdname">cmdname</span>, such as <span class="cmdname">piconfig</span>, <span class="cmdname">piartool</span>, and <span class="cmdname">pidiag</span>.</p>
-          
-          <p>The <span class="uicontrol">Start</span>, <span class="uicontrol">Stop</span>, and <span class="uicontrol">Restart</span> buttons on the toolbar are used to stop and start a service. This topic demonstrates how various inline elements appear, both within a sentence and as the last element in a sentence (before a punctuation mark). </p>
-          
-          <p>Use the <span class="cmdname">cmdname</span> element for commands, such as <span class="cmdname">piconfig</span>. </p>
-          
-          <p>Use the <span class="codeph">codeph</span> element for bits of code or short messages, such as <span class="codeph">Do not jump</span>.</p>
+          <div class="row">
+              <div class="col-xs-9 col-sm-9 col-md-9">
+                <h2 class="osi-sub-header pull-left">Inline Elements Test</h2>
+              </div>
 
-          <p>
-            Use the <span class="filepath">filepath</span> element to show a directory or file name, such as <span class="filepath">C:\Program Files</span>.<br>
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <ul class="pdf-print-email">
+                  <li><img src="image/pdf.png"></li>
+                  <li><img src="image/print.png"></li>
+                  <li><img src="image/email.png"></li>
+                </ul>
+              </div>
+          </div>
 
-            Use the <em>italic</em> element sparingly for emphasis, such as <em>attention</em>.<br>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12"> 
 
-            Use menucascade for file menus, such as <span class="uicontrol">File > New or File > Close.</span><br>
+              <p>
+                This topic contains some inline elements like <span class="uicontrol">uicontrol</span> , followed by <span class="cmdname">cmdname</span>, followed by <span class"parmname">parmname</span>, followed by <span class="option">option</span>, followed by <span class="codeph">codeph</span> , followed by <span class="userinput">userinput</span> , followed by <span class="apiname">apiname</span>, followed by <span class="wintitle">Wintitle</span>, followed by an independent <var class="varname">varname</var>, and then a <var class="varname">varname</var> inside <span class="userinput">userinput</span>.
+              </p>
+              
+              <p>
+                Use of inline elements like, uicontrol introduce extra spaces. This becomes particularly problematic with commas: <span class="uicontrol">first</span> , <span class="uicontrol">second</span> , and <span class="uicontrol">third</span>. 
+              </p>
+              
+              <p>This happens with all inline elements, such as <span class="codeph">codeph</span> : </p>
+              
+              <p>this might be used for a list like <span class="codeph">sinusoid</span> , <span class="codeph">sinusoidu</span>, and <span class="codeph">cdt158</span>. Also for <span class="cmdname">cmdname</span>, such as <span class="cmdname">piconfig</span>, <span class="cmdname">piartool</span>, and <span class="cmdname">pidiag</span>.</p>
+              
+              <p>The <span class="uicontrol">Start</span>, <span class="uicontrol">Stop</span>, and <span class="uicontrol">Restart</span> buttons on the toolbar are used to stop and start a service. This topic demonstrates how various inline elements appear, both within a sentence and as the last element in a sentence (before a punctuation mark). </p>
+              
+              <p>Use the <span class="cmdname">cmdname</span> element for commands, such as <span class="cmdname">piconfig</span>. </p>
+              
+              <p>Use the <span class="codeph">codeph</span> element for bits of code or short messages, such as <span class="codeph">Do not jump</span>.</p>
 
-            Use the <span class="option">option</span> element for values of parameters, such as <span class="option">True</span>.<br>
+              <p>
+                Use the <span class="filepath">filepath</span> element to show a directory or file name, such as <span class="filepath">C:\Program Files</span>.<br>
 
-            Use the <span class"parmname">parmname</span> element for names of parameters, such as <span class"parmname">IsHappy</span>.<br>
+                Use the <em>italic</em> element sparingly for emphasis, such as <em>attention</em>.<br>
 
-            Use the <span class="uicontrol">uicontrol</span> element for words in the user interface, such as <span class="uicontrol">Field name</span>.<br>
+                Use menucascade for file menus, such as <span class="uicontrol">File > New or File > Close.</span><br>
 
-            Use the <span class="userinput">userinput</span> element for text that users must type, such as <span class="userinput">piconfig -l</span>.<br>
+                Use the <span class="option">option</span> element for values of parameters, such as <span class="option">True</span>.<br>
 
-            Use the <span class="varname">varname</span> element for values that get substituted, such as Your Name. You might include <span class="varname">varname</span> elements inside other elements, such as <span class="userinput">userinput</span>. For example, you might tell someone to enter <span class="userinput">First=</span> <span class="varname">YourFirstName</span>, <span class="userinput">Last=</span> <var class="varname">YourLastName</var>. Similarly, you might include <var class="varname">varname</var> elements inside <span class="codeph">codeph</span>. For example, use the code For <span class="codeph">i=1 to CounterVariable</span> .<br>
+                Use the <span class"parmname">parmname</span> element for names of parameters, such as <span class"parmname">IsHappy</span>.<br>
 
-            Use the <span class="wintitle">wintitle</span> element to mark window titles, such as <span class="wintitle">Browse Repository</span>.<br>
-          </p>
+                Use the <span class="uicontrol">uicontrol</span> element for words in the user interface, such as <span class="uicontrol">Field name</span>.<br>
+
+                Use the <span class="userinput">userinput</span> element for text that users must type, such as <span class="userinput">piconfig -l</span>.<br>
+
+                Use the <span class="varname">varname</span> element for values that get substituted, such as Your Name. You might include <span class="varname">varname</span> elements inside other elements, such as <span class="userinput">userinput</span>. For example, you might tell someone to enter <span class="userinput">First=</span> <span class="varname">YourFirstName</span>, <span class="userinput">Last=</span> <var class="varname">YourLastName</var>. Similarly, you might include <var class="varname">varname</var> elements inside <span class="codeph">codeph</span>. For example, use the code For <span class="codeph">i=1 to CounterVariable</span> .<br>
+
+                Use the <span class="wintitle">wintitle</span> element to mark window titles, such as <span class="wintitle">Browse Repository</span>.<br>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

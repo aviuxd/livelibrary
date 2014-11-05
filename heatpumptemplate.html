@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="image/favicon.ico">
 
-    <title>PI Live Library</title>
+    <title>LiveLibrary Demo</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-3.1.1/css/bootstrap.css" rel="stylesheet">
@@ -93,160 +93,175 @@
 
           <div class="bs-docs-sidebar hidden-print affix" role="complementary">
             <ul class="nav bs-docs-sidenav">
-
+            <!-- sidenav inserted from insert.js-->
             </ul>
           </div>
         </div>
-        <div class="col-xs-8 col-sm-8 col-md-9">
+        <div class="col-xs-9 col-sm-9 col-md-9">
+          <div class="row">
+              <div class="col-xs-9 col-sm-9 col-md-9">
+                <h2 class="osi-sub-header pull-left">Create the heat pump templates</h2>
+              </div>
 
-          <h2 class="sub-header">Create the heat pump templates</h2>
-          <div class="table-responsive">
-            <p>In PI AF, templates provide a structure that you can use to create objects. You can use PI System Explorer to create templates. Follow this procedure to use PI System Explorer to create an element template for a heat pump and an attribute template to store the speed of the pump. The attribute template references a point from the PI Random interface. </p>
-            
-            <h3>Before you start</h3>
-            <p>Decide which PI AF server and which PI AF database will store the templates. </p>
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <ul class="pdf-print-email">
+                  <li><img src="image/pdf.png"></li>
+                  <li><img src="image/print.png"></li>
+                  <li><img src="image/email.png"></li>
+                </ul>
+              </div>
+          </div>
 
-            <h3>Procedure</h3>
-            <ol>
-              
-              <li>
-                Open PI System Explorer. (<strong>Click Start > All Programs > PI System > PI System Explorer</strong>) 
-              </li>
-              
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              <div class="table-responsive">
+                <p>In PI AF, templates provide a structure that you can use to create objects. You can use PI System Explorer to create templates. Follow this procedure to use PI System Explorer to create an element template for a heat pump and an attribute template to store the speed of the pump. The attribute template references a point from the PI Random interface. </p>
+                
+                <h3>Before you start</h3>
+                <p>Decide which PI AF server and which PI AF database will store the templates. </p>
 
-              <li>
-                Select a database to use for the tutorial: 
-                <ol type="a">
+                <h3>Procedure</h3>
+                <ol>
+                  
                   <li>
-                    In the PI System Explorer toolbar, click <strong>Database</strong>.
+                    Open PI System Explorer. (<strong>Click Start > All Programs > PI System > PI System Explorer</strong>) 
                   </li>
+                  
+
                   <li>
-                    From the <strong>AF Server</strong> list, select the PI AF server that stores your database. 
+                    Select a database to use for the tutorial: 
+                    <ol type="a">
+                      <li>
+                        In the PI System Explorer toolbar, click <strong>Database</strong>.
+                      </li>
+                      <li>
+                        From the <strong>AF Server</strong> list, select the PI AF server that stores your database. 
+                      </li>
+                      <li>
+                        From the <strong>Databases</strong> list, select your database. 
+                      </li>
+                      <li>
+                        Click <strong>OK</strong>.
+                      </li>
+                    </ol>
                   </li>
+
+
                   <li>
-                    From the <strong>Databases</strong> list, select your database. 
+                    Create a new element template: 
+                    <ol type="a">
+                      <li>
+                        In the navigation pane, click <strong>Library</strong>.
+                      </li>
+                      <li>
+                        In the database tree, expand <strong>Templates</strong>, right-click <strong>Element Templates</strong>, and click <strong>New Template</strong>.
+                      </li>
+                      <li>
+                        On the <strong>General</strong> tab, in the <strong>Name</strong> field, enter <code>Heat Pump Template</code>.
+                      </li>
+                    </ol>
                   </li>
+
+
                   <li>
-                    Click <strong>OK</strong>.
+                    Create a new attribute template: 
+                    <ol type="a">
+                      <li>
+                         On the <strong>Attribute Templates</strong> tab, in the empty template table, click <strong>New Attribute Template</strong>. 
+                      </li>
+                      <li>
+                        In the <strong>Name</strong> field, enter <code>PumpSpeed</code>. 
+                      </li>
+                    </ol>
+                  </li>
+
+
+                  <li>
+                    Configure a data reference for the attribute template:
+                    <ol type="a">
+                      <li>
+                        From the Data Reference list, select PI Point.
+                      </li>
+                      <li>
+                        Click Settings to open the PI Point Data Reference window. 
+                      </li>
+                      <li>
+                        In the PI Server list, leave the default value: <code>%Server%</code> <br>
+                        The value <code>%Server%</code> is a substitution parameter. When creating an attribute from this template, PI AF sets the PI Server to the default PI Server of the element's PI AF database. 
+                      </li>
+                      <li>
+                        In the <strong>Tag name</strong> field, leave the default tag name: <code>%Element%.%Attribute%</code>.<br>
+                        The values <code>%Element%</code> and <code>%Attribute%</code> are substitution parameters. When creating an attribute from this template, PI AF sets the data reference to a PI point named <i>ElementName.AttributeName</i>. 
+                      </li>
+                      <li>
+                        Select the <strong>Tag Creation</strong> check box and then click <img src=""> adjacent to the <strong>Tag Creation</strong> field.<br>
+                        The Tag Creation Settings window opens. 
+                      </li>
+                      <li>
+                        From the <strong>Point Class</strong> list, select <strong>classic</strong>. 
+                      </li>
+                      <li>
+                        From the <strong>Point Type</strong> list, select <strong>Float32</strong>.
+                      </li>
+                      <li>
+                        Enter the following point attribute values: 
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <div class="table-responsive">
+                              <table class="table table-striped">
+                                <thead>
+                                  <tr>
+                                    <th><strong>Attribute</strong></th>
+                                    <th><strong>Value</strong></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>zero</td>
+                                    <td>1100</td>
+                                  </tr>
+                                  <tr>
+                                    <td>span</td>
+                                    <td>200</td>
+                                  </tr>
+                                  <tr>
+                                    <td>pointsource</td>
+                                    <td>R</td>
+                                  </tr>
+                                  <tr>
+                                    <td>location4</td>
+                                    <td>1</td>
+                                  </tr>
+                                  <tr>
+                                    <td>location5</td>
+                                    <td>2</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div> <!-- table end -->
+                          </div>
+                        </div>
+                      </li>
+                      <p>For the other attributes, leave the default values. </p>
+                      <div class="well">Note: These settings create a point that references the default PI Random interface. If this interface is not installed on your system, this point will have no values. </div>
+                      <li>Click <strong>OK</strong>.</li>
+                      <li>On the <kbd>PI Point Data Reference</kbd> window, click <strong>OK</strong>.</li>
+
+                    </ol>
+                  </li>
+
+
+                  <li>
+                    Check in the templates.
+                    <ol type="a">
+                      <li>Click <strong>File > Check In</strong>.</li>
+                      <li>On the Check In window, click <strong>Check In</strong>.<br>
+                      PI AF checks in the new template and makes it available for use. </li>
+                    </ol>
                   </li>
                 </ol>
-              </li>
-
-
-              <li>
-                Create a new element template: 
-                <ol type="a">
-                  <li>
-                    In the navigation pane, click <strong>Library</strong>.
-                  </li>
-                  <li>
-                    In the database tree, expand <strong>Templates</strong>, right-click <strong>Element Templates</strong>, and click <strong>New Template</strong>.
-                  </li>
-                  <li>
-                    On the <strong>General</strong> tab, in the <strong>Name</strong> field, enter <code>Heat Pump Template</code>.
-                  </li>
-                </ol>
-              </li>
-
-
-              <li>
-                Create a new attribute template: 
-                <ol type="a">
-                  <li>
-                     On the <strong>Attribute Templates</strong> tab, in the empty template table, click <strong>New Attribute Template</strong>. 
-                  </li>
-                  <li>
-                    In the <strong>Name</strong> field, enter <code>PumpSpeed</code>. 
-                  </li>
-                </ol>
-              </li>
-
-
-              <li>
-                Configure a data reference for the attribute template:
-                <ol type="a">
-                  <li>
-                    From the Data Reference list, select PI Point.
-                  </li>
-                  <li>
-                    Click Settings to open the PI Point Data Reference window. 
-                  </li>
-                  <li>
-                    In the PI Server list, leave the default value: <code>%Server%</code> <br>
-                    The value <code>%Server%</code> is a substitution parameter. When creating an attribute from this template, PI AF sets the PI Server to the default PI Server of the element's PI AF database. 
-                  </li>
-                  <li>
-                    In the <strong>Tag name</strong> field, leave the default tag name: <code>%Element%.%Attribute%</code>.<br>
-                    The values <code>%Element%</code> and <code>%Attribute%</code> are substitution parameters. When creating an attribute from this template, PI AF sets the data reference to a PI point named <i>ElementName.AttributeName</i>. 
-                  </li>
-                  <li>
-                    Select the <strong>Tag Creation</strong> check box and then click <img src=""> adjacent to the <strong>Tag Creation</strong> field.<br>
-                    The Tag Creation Settings window opens. 
-                  </li>
-                  <li>
-                    From the <strong>Point Class</strong> list, select <strong>classic</strong>. 
-                  </li>
-                  <li>
-                    From the <strong>Point Type</strong> list, select <strong>Float32</strong>.
-                  </li>
-                  <li>
-                    Enter the following point attribute values: 
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <div class="table-responsive">
-                          <table class="table table-striped">
-                            <thead>
-                              <tr>
-                                <th><strong>Attribute</strong></th>
-                                <th><strong>Value</strong></th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>zero</td>
-                                <td>1100</td>
-                              </tr>
-                              <tr>
-                                <td>span</td>
-                                <td>200</td>
-                              </tr>
-                              <tr>
-                                <td>pointsource</td>
-                                <td>R</td>
-                              </tr>
-                              <tr>
-                                <td>location4</td>
-                                <td>1</td>
-                              </tr>
-                              <tr>
-                                <td>location5</td>
-                                <td>2</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div> <!-- table end -->
-                      </div>
-                    </div>
-                  </li>
-                  <p>For the other attributes, leave the default values. </p>
-                  <div class="well">Note: These settings create a point that references the default PI Random interface. If this interface is not installed on your system, this point will have no values. </div>
-                  <li>Click <strong>OK</strong>.</li>
-                  <li>On the <kbd>PI Point Data Reference</kbd> window, click <strong>OK</strong>.</li>
-
-                </ol>
-              </li>
-
-
-              <li>
-                Check in the templates.
-                <ol type="a">
-                  <li>Click <strong>File > Check In</strong>.</li>
-                  <li>On the Check In window, click <strong>Check In</strong>.<br>
-                  PI AF checks in the new template and makes it available for use. </li>
-                </ol>
-              </li>
-            </ol>
-
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -296,7 +311,7 @@
     <script>
     $(function(){
 
-      $('.bs-docs-sidenav >li:nth-child(8)').addClass('active');
+      $('.bs-docs-sidenav >li:nth-child(9)').addClass('active');
 
       $('.bs-docs-sidenav >li').fadeIn('slow');
 

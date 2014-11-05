@@ -30,7 +30,7 @@
 	}
 
 	@font-face {
-		font-family: 	ProximaNovaItalics;
+		font-family: 	ProximaNovaItalic;
 		src: 			url('../../fonts/proxima-nova-regular-italic.svg') format('svg');
 	}
 }
@@ -81,11 +81,29 @@
 }
 
 .page-header{
-	margin-top:	-10px;
+	margin-top:		-10px;
+	padding-bottom:	0px;
 	border-bottom: 	0px;
-		font-size: ceil(@font-size-base * 1.6);
-			color: #555;
+		font-size: 	ceil(@font-size-base * 1.6);
+			color: 	#555;
 
+}
+
+.osi-sub-header{
+	margin-left: -15px;
+}
+
+.pdf-print-email{
+	list-style: none;
+	margin-top: 28px;
+	
+	li{
+		display: 	inline-block;
+		float: 		left;
+		padding: 	2px 4px;
+	}
+
+	.pull-right;
 }
 
 p, li{
@@ -115,7 +133,7 @@ b, strong{
 }
 
 i{
-	font-family: 	ProximaNovaItalics;
+	font-family: 	ProximaNovaItalic;
 	font-weight: 	normal;
 	font-style: 	normal !important;
 }
@@ -219,9 +237,7 @@ html, body{
 //Table Styling
 //==========================================================
 
-.table-versions{
-	.table-row-variant(prerelease;#999999);
-}
+.table-row-variant(prerelease;#fff);
 
 .table > thead > tr > th, 
 .table > tbody > tr > th, 
@@ -236,3 +252,26 @@ html, body{
 .table > thead > tr > td{
 	border-bottom:	1px solid #dddddd;
 }
+
+
+.prerelease-header{
+	padding: 	2px 4px;
+	color: 		#fff;
+	background-color: #D9849D;
+}
+
+.osi-product-version{
+	tr{
+		a {
+			color: 		@gray-dark;
+		    display:	block;
+		    width:		305%;
+		    position:	relative;
+		    z-index:	10;
+		}
+		a:hover{
+			text-decoration: none;
+		}
+	}
+}
+

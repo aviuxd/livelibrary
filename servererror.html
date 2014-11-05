@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="image/favicon.ico">
 
-    <title>PI Live Library</title>
+    <title>LiveLibrary Demo</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-3.1.1/css/bootstrap.css" rel="stylesheet">
@@ -98,35 +98,53 @@
         </div>
         <div class="col-xs-8 col-sm-8 col-md-9">
 
-          <h2 class="sub-header">Server error in PI Web Services application</h2>
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>This error indicates:</th>
-                  <th>To resolve this error:</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Permissions on the file path specified in the error message are restricted if received when a user enters a URL in Windows Internet Explorer browser to verify the PI Services installation.</td>
-                  <td>Verify that the directory in the message has read and write access for the Process ID account:
-                      <ul>
-                        <li>The folder Temporary ASP.NET Files, typically found in <code>C:\Windows\</code> </li>
-                        <div class="well">
-                          Note: <code>Microsoft.NET\Framework\v2.0.50727</code>, is used by CLR to store compiled code for ASP.NET applications. PI Web Services does not modify this in any way. The Network Service account requires write permission to this folder and its subfolders. 
-                        </div>
-                        <li >You can also use the <code>aspnet_regiis.exe</code> utility to access these permissions. The utility can be found in <br> <code> C:\Windows\Microsoft.NET\Framework\v2.0.50727</code>. Or, to open in a command prompt window, enter:<br> <code>aspnet_regiis -ga "NT AUTHORITY\NETWORK SERVICE"</code></li>
-                      </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <h3>See Also</h3>
-              <p><a href="#">Implicit sign-ups</a></p>
-              <p><a href="#">Sign up for data updates</a></p>
-              <p><a href="#">IPITimeSeries interface</a></p>
-          </div>
+            <div class="row">
+                <div class="col-xs-9 col-sm-9 col-md-9">
+                  <h2 class="osi-sub-header pull-left">Server error in PI Web Services application</h2>
+                </div>
+
+                <div class="col-xs-3 col-sm-3 col-md-3">
+                  <ul class="pdf-print-email">
+                    <li><img src="image/pdf.png"></li>
+                    <li><img src="image/print.png"></li>
+                    <li><img src="image/email.png"></li>
+                  </ul>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="table-responsive">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>This error indicates:</th>
+                        <th>To resolve this error:</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Permissions on the file path specified in the error message are restricted if received when a user enters a URL in Windows Internet Explorer browser to verify the PI Services installation.</td>
+                        <td>Verify that the directory in the message has read and write access for the Process ID account:
+                            <ul>
+                              <li>The folder Temporary ASP.NET Files, typically found in <code>C:\Windows\</code> </li>
+                              <div class="well">
+                                Note: <code>Microsoft.NET\Framework\v2.0.50727</code>, is used by CLR to store compiled code for ASP.NET applications. PI Web Services does not modify this in any way. The Network Service account requires write permission to this folder and its subfolders. 
+                              </div>
+                              <li >You can also use the <code>aspnet_regiis.exe</code> utility to access these permissions. The utility can be found in <br> <code> C:\Windows\Microsoft.NET\Framework\v2.0.50727</code>. Or, to open in a command prompt window, enter:<br> <code>aspnet_regiis -ga "NT AUTHORITY\NETWORK SERVICE"</code></li>
+                            </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <h3>See Also</h3>
+                    <p><a href="#">Implicit sign-ups</a></p>
+                    <p><a href="#">Sign up for data updates</a></p>
+                    <p><a href="#">IPITimeSeries interface</a></p>
+                </div>
+              </div>
+            </div>
+
         </div>
       </div>
     </div>
@@ -173,7 +191,7 @@
     <script>
     $(function(){
 
-      $('.bs-docs-sidenav >li:nth-child(6)').addClass('active');
+      $('.bs-docs-sidenav >li:nth-child(7)').addClass('active');
 
       $('.bs-docs-sidenav >li').fadeIn('slow');
 

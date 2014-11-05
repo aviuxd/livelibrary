@@ -15,6 +15,7 @@
 
     $('.bs-docs-sidenav').append('<li style="display:none;    text-align:initial;"><a href="index.html">Home</a></li>');
     $('.bs-docs-sidenav').append('<li style="display:none;    text-align:initial;"><a href="landing.html">Landing Page</a></li>');
+    $('.bs-docs-sidenav').append('<li style="display:none;    text-align:initial;"><a href="productversionpage.html">Product Version Page</a></li>');
     $('.bs-docs-sidenav').append('<li style="display:none;    text-align:initial;"><a href="protectpiadmin.html">Protect piadmin</a></li>');
     $('.bs-docs-sidenav').append('<li style="display:none;    text-align:initial;"><a href="piconfigcommand.html">Options for the piconfig command</a></li></li>');
     $('.bs-docs-sidenav').append('<li style="display:none;    text-align:initial;"><a href="signupforpiupdate.html">SignUpForPIUpdates method</a></li></li>');

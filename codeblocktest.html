@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="image/favicon.ico">
 
-    <title>PI Live Library</title>
+    <title>LiveLibrary Demo</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-3.1.1/css/bootstrap.css" rel="stylesheet">
@@ -103,12 +103,27 @@
         </div>
         <div class="col-xs-8 col-sm-8 col-md-9">
 
-          <h2 class="sub-header">Codeblock tests</h2>
-          <p> The codeblock element poses many issues with output rendering. This topic tests many of these issues.</p>
+          <div class="row">
+              <div class="col-xs-9 col-sm-9 col-md-9">
+                <h2 class="osi-sub-header pull-left">Codeblock tests</h2>
+              </div>
 
-          <h3>Codeblock inside notes</h3>
-          <p>Inside a note, the shading of the note must be maintained but the shading of the codeblock is different. This poses a challenge. Each note type must be tested separately.</p>
-          <div class="note"><span class="notetitle">Note:</span> 
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <ul class="pdf-print-email">
+                  <li><img src="image/pdf.png"></li>
+                  <li><img src="image/print.png"></li>
+                  <li><img src="image/email.png"></li>
+                </ul>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              <p> The codeblock element poses many issues with output rendering. This topic tests many of these issues.</p>
+
+              <h3>Codeblock inside notes</h3>
+              <p>Inside a note, the shading of the note must be maintained but the shading of the codeblock is different. This poses a challenge. Each note type must be tested separately.</p>
+              <div class="note"><span class="notetitle">Note:</span> 
                       This is a note with a code block inside a paragraph:
 
                       <pre class="codeblock">
@@ -218,6 +233,8 @@ public class RandomCustomParameters : IPluginCustomParameters
         </div>
       </div>
     </div>
+  </div>
+</div>
 
 </div><!-- end of REALLY LARGE DIV wrapping header and content-->
 

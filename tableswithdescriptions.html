@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="image/favicon.ico">
 
-    <title>Dashboard Template for Bootstrap</title>
+    <title>LiveLibrary Demo</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-3.1.1/css/bootstrap.css" rel="stylesheet">
@@ -105,150 +105,168 @@
         </div>
         <div class="col-xs-8 col-sm-8 col-md-9">
 
-          <h2 class="sub-header">Options for the piconfig command</h2>
-          <p>When you create a table, the description (<desc>) is an optional element that you can include. The description element describes the table. At the most basic level, it might say "The following table shows...." Text in the description element is always printed with the figure. The output script places the text immediately before the table, separate from the title and table. </p>
+          <div class="row">
+              <div class="col-xs-9 col-sm-9 col-md-9">
+                <h2 class="osi-sub-header pull-left">Tables with description</h2>
+              </div>
 
-          <h3>Tables with titles</h3>
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <ul class="pdf-print-email">
+                  <li><img src="image/pdf.png"></li>
+                  <li><img src="image/print.png"></li>
+                  <li><img src="image/email.png"></li>
+                </ul>
+              </div>
+          </div>
 
-          <p>Titles are an optional element. This section shows how tables with titles and descriptions render. The following table describes some houseplants that develop flowers.</p>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              <p>When you create a table, the description (<desc>) is an optional element that you can include. The description element describes the table. At the most basic level, it might say "The following table shows...." Text in the description element is always printed with the figure. The output script places the text immediately before the table, separate from the title and table. </p>
 
-          <span class="tablecap">Types of flowering plants v1</span>
+              <h3>Tables with titles</h3>
 
-<!--           <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th><strong>Option</strong></th>
-                  <th><strong>Argument</strong> </th>
-                  <th><strong>Defaults</strong> </th>
-                  <th><strong>Description</strong> </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><code>? </code></td>
-                  <td>&nbsp; </td>
-                  <td>&nbsp; </td>
-                  <td>Lists all commands. </td>
-                </tr>
-                <tr>
-                  <td><code>?atr</code></td>
-                  <td>&nbsp; </td>
-                  <td>&nbsp; </td>
-                  <td>Lists all attributes for current table. </td>
-                </tr>
-                <tr>
-                  <td><code>?tbl</code> </td>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                  <td>Lists all tables known to <code>piconfig</code>.</td>
-                </tr>
-                <tr>
-                  <td><code>Case</code> </td>
-                  <td><code>Data|Names|All</code> </td>
-                  <td><code>All</code> (case-insensitive)</td>
-                  <td>Sets case-sensitivity-ignore mode. This affects only timeout and firewall tables. </td>
-                </tr>
-                <tr>
-                  <td><code>Cd</code> </td>
-                  <td><i>Directory</i></td>
-                  <td>&nbsp;</td>
-                  <td>Change directory for input/output files. </td>
-                </tr>
-                <tr>
-                  <td><code>Clear</code></td>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                  <td>Clears <code>Modify</code> and <code>Select</code> specifications. </td>
-                </tr>
-                <tr>
-                  <td><code>Comchar</code></td>
-                  <td> <i> NewComChar </i> </td>
-                  <td><code>@</code></td>
-                  <td>Changes the command character to the specified non-alphanumeric character. </td>
-                </tr>
-                <tr>
-                  <td><code>Comment</code> </td>
-                  <td> <i> NewCommentChar </i> </td>
-                  <td><code>*</code></td>
-                  <td>Changes the comment character to the specified non-alphanumeric character.</td>
-                </tr>
-                <tr>
-                  <td><code>Delimiter</code> </td>
-                  <td> <i> NewDelimiter </i> </td>
-                  <td><code>,</code></td>
-                  <td>Changes the delimiter to the specified non-alphanumeric character. </td>
-                </tr>
-                <tr>
-                  <td><code>Echo</code></td>
-                  <td><code>Data|Commands |All|Verbose|None</code> </td>
-                  <td><code>Data</code></td>
-                  <td>Specifies if input commands and data are echoed to the output file. </td>
-                </tr>
-                <tr>
-                  <td><code>End-repeat</code> </td>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                  <td>Marks end of repeated field. </td>
-                </tr>
-                <tr>
-                  <td><code>Endrecord</code></td>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                  <td>Terminates input of one data record. Required in keyword format. May be used in other formats to terminate input before all data fields were entered. </td>
-                </tr>
-                <tr>
-                  <td><code>Endsection</code></td>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                  <td>Marks the end of processing section.</td>
-                </tr>
-                <tr>
-                  <td><code>Error</code></td>
-                  <td><i>Filename</i> </td>
-                  <td>&nbsp;</td>
-                  <td>Redirects error messages to file. </td>
-                </tr>
-                <tr>
-                  <td><code>Exit</code> </td>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                  <td>Exits the <code>piconfig</code> utility. ( <code>Quit</code> and <code>Bye</code> work the same way.) </td>
-                </tr>
-                <tr>
-                  <td><code>Help</code> </td>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                  <td>Lists all commands. </td>
-                </tr>
-                <tr>
-                  <td><code>Input</code> </td>
-                  <td><i>Filename</i> </td>
-                  <td>&nbsp;</td>
-                  <td>Redirects input from file. </td>
-                </tr>
-                <tr>
-                  <td><code>Istructure</code> </td>
-                  <td><i>Structure</i> </td>
-                  <td>&nbsp;</td>
-                  <td>Specifies format of input data.</td>
-                </tr>
-                <tr>
-                  <td><code>Istype</code> </td>
-                  <td><code>F|D|K</code> </td>
-                  <td><code>D</code></td>
-                  <td>Selects input data format structure type.</td>
-                </tr>
-                <tr>
-                  <td><code>Line</code> </td>
-                  <td><code>BufferSize</code></td>
-                  <td><code>10</code></td>
-                  <td>Sets the error tolerance. piconfig will exit when the number of errors reaches the specified number. However, piconfig exits only when in non-interactive mode. A Maxerr value of -1 causes piconfig to exit upon the first error and display the line number of the input file. </td>
-                </tr>
-              </tbody>
-            </table>
+              <p>Titles are an optional element. This section shows how tables with titles and descriptions render. The following table describes some houseplants that develop flowers.</p>
 
-          </div> -->
+              <span class="tablecap">Types of flowering plants v1</span>
+
+    <!--           <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th><strong>Option</strong></th>
+                      <th><strong>Argument</strong> </th>
+                      <th><strong>Defaults</strong> </th>
+                      <th><strong>Description</strong> </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><code>? </code></td>
+                      <td>&nbsp; </td>
+                      <td>&nbsp; </td>
+                      <td>Lists all commands. </td>
+                    </tr>
+                    <tr>
+                      <td><code>?atr</code></td>
+                      <td>&nbsp; </td>
+                      <td>&nbsp; </td>
+                      <td>Lists all attributes for current table. </td>
+                    </tr>
+                    <tr>
+                      <td><code>?tbl</code> </td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>Lists all tables known to <code>piconfig</code>.</td>
+                    </tr>
+                    <tr>
+                      <td><code>Case</code> </td>
+                      <td><code>Data|Names|All</code> </td>
+                      <td><code>All</code> (case-insensitive)</td>
+                      <td>Sets case-sensitivity-ignore mode. This affects only timeout and firewall tables. </td>
+                    </tr>
+                    <tr>
+                      <td><code>Cd</code> </td>
+                      <td><i>Directory</i></td>
+                      <td>&nbsp;</td>
+                      <td>Change directory for input/output files. </td>
+                    </tr>
+                    <tr>
+                      <td><code>Clear</code></td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>Clears <code>Modify</code> and <code>Select</code> specifications. </td>
+                    </tr>
+                    <tr>
+                      <td><code>Comchar</code></td>
+                      <td> <i> NewComChar </i> </td>
+                      <td><code>@</code></td>
+                      <td>Changes the command character to the specified non-alphanumeric character. </td>
+                    </tr>
+                    <tr>
+                      <td><code>Comment</code> </td>
+                      <td> <i> NewCommentChar </i> </td>
+                      <td><code>*</code></td>
+                      <td>Changes the comment character to the specified non-alphanumeric character.</td>
+                    </tr>
+                    <tr>
+                      <td><code>Delimiter</code> </td>
+                      <td> <i> NewDelimiter </i> </td>
+                      <td><code>,</code></td>
+                      <td>Changes the delimiter to the specified non-alphanumeric character. </td>
+                    </tr>
+                    <tr>
+                      <td><code>Echo</code></td>
+                      <td><code>Data|Commands |All|Verbose|None</code> </td>
+                      <td><code>Data</code></td>
+                      <td>Specifies if input commands and data are echoed to the output file. </td>
+                    </tr>
+                    <tr>
+                      <td><code>End-repeat</code> </td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>Marks end of repeated field. </td>
+                    </tr>
+                    <tr>
+                      <td><code>Endrecord</code></td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>Terminates input of one data record. Required in keyword format. May be used in other formats to terminate input before all data fields were entered. </td>
+                    </tr>
+                    <tr>
+                      <td><code>Endsection</code></td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>Marks the end of processing section.</td>
+                    </tr>
+                    <tr>
+                      <td><code>Error</code></td>
+                      <td><i>Filename</i> </td>
+                      <td>&nbsp;</td>
+                      <td>Redirects error messages to file. </td>
+                    </tr>
+                    <tr>
+                      <td><code>Exit</code> </td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>Exits the <code>piconfig</code> utility. ( <code>Quit</code> and <code>Bye</code> work the same way.) </td>
+                    </tr>
+                    <tr>
+                      <td><code>Help</code> </td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>Lists all commands. </td>
+                    </tr>
+                    <tr>
+                      <td><code>Input</code> </td>
+                      <td><i>Filename</i> </td>
+                      <td>&nbsp;</td>
+                      <td>Redirects input from file. </td>
+                    </tr>
+                    <tr>
+                      <td><code>Istructure</code> </td>
+                      <td><i>Structure</i> </td>
+                      <td>&nbsp;</td>
+                      <td>Specifies format of input data.</td>
+                    </tr>
+                    <tr>
+                      <td><code>Istype</code> </td>
+                      <td><code>F|D|K</code> </td>
+                      <td><code>D</code></td>
+                      <td>Selects input data format structure type.</td>
+                    </tr>
+                    <tr>
+                      <td><code>Line</code> </td>
+                      <td><code>BufferSize</code></td>
+                      <td><code>10</code></td>
+                      <td>Sets the error tolerance. piconfig will exit when the number of errors reaches the specified number. However, piconfig exits only when in non-interactive mode. A Maxerr value of -1 causes piconfig to exit upon the first error and display the line number of the input file. </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div> -->
+
+            </div>
+          </div>
         </div>
       </div>
 

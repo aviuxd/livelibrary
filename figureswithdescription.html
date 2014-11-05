@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="image/favicon.ico">
 
-    <title>PI Live Library</title>
+    <title>LiveLibrary Demo</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-3.1.1/css/bootstrap.css" rel="stylesheet">
@@ -103,41 +103,58 @@
         </div>
         <div class="col-xs-8 col-sm-8 col-md-9">
 
-          <h2 class="sub-header">Figures with descriptions</h2>
-          <p>When you create a figure, an optional element that you include in the figure is the description element, <desc>. The description element describes the figure. At the most basic level, it might say "The following figure shows...." Text in the description element is always printed with the figure. The output script places the text immediately before the figure, separated from the title and figure box in help output.</p>
+          <div class="row">
+              <div class="col-xs-9 col-sm-9 col-md-9">
+                <h2 class="osi-sub-header pull-left">Figures with descriptions</h2>
+              </div>
 
-          <p>The use of description elements is probably most useful if you reuse a figure in multiple topics. Then, each time you insert the figure, the description would automatically be included. You would not need to insert a separate paragraph or retype.</p>
-
-          <h3>Figures with titles</h3>
-          <p>For example, suppose you are documenting the reconnection logic of a program. To augment the text that describes the logic, you might include a diagram with a description. The following diagram demonstrates the program logic when an interface becomes disconnected from its data source.</p>
-
-          <div class="fignone">
-            <span class="figcap">Program flow for data-source reconnection v1</span>
-            <img src="/image/figure-1-low.png">
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <ul class="pdf-print-email">
+                  <li><img src="image/pdf.png"></li>
+                  <li><img src="image/print.png"></li>
+                  <li><img src="image/email.png"></li>
+                </ul>
+              </div>
           </div>
 
-          <p>In this case the sentence, "The following diagram demonstrates...," is contained in the description element. Note that in this case the figure is inserted within the previous paragraph. Note the spacing of elements. Next, we'll repeat the same figure, but not inside the paragraph of this text. To ensure that this paragraph appears on the same page as the next figure, I'm going to insert some extra text. That's what that sentence was about and what this sentence is about also: tricking the system with some extra words that really serve no purpose in life other than taking up space. Compare the spacing. </p>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              <p>When you create a figure, an optional element that you include in the figure is the description element, <desc>. The description element describes the figure. At the most basic level, it might say "The following figure shows...." Text in the description element is always printed with the figure. The output script places the text immediately before the figure, separated from the title and figure box in help output.</p>
 
-          <span class="figdesc">The following diagram demonstrates the program logic when an interface becomes disconnected from its data source. </span>
+              <p>The use of description elements is probably most useful if you reuse a figure in multiple topics. Then, each time you insert the figure, the description would automatically be included. You would not need to insert a separate paragraph or retype.</p>
 
-          <div class="fignone">
-            <span class="figcap">Program flow for data-source reconnection v1</span>
-            <img src="/image/figure-1-low.png">
-          </div>
+              <h3>Figures with titles</h3>
+              <p>For example, suppose you are documenting the reconnection logic of a program. To augment the text that describes the logic, you might include a diagram with a description. The following diagram demonstrates the program logic when an interface becomes disconnected from its data source.</p>
 
-          <h3>Figures without titles</h3>
-          <p>Though titles are a good idea for figures (and necessary if you want to create a cross reference), you might have a figure without a title. In general, you probably would not have a description either, because such figures should flow from the text. But if you include a description, it will be output. The following figure shows an example of output from the CompDat function in PI DataLink. </p>
+              <div class="fignone">
+                <span class="figcap">Program flow for data-source reconnection v1</span>
+                <img src="/image/figure-1-low.png">
+              </div>
 
-          <div class="fignone">
-            <img src="/image/figure-2-low.png">
-          </div>
+              <p>In this case the sentence, "The following diagram demonstrates...," is contained in the description element. Note that in this case the figure is inserted within the previous paragraph. Note the spacing of elements. Next, we'll repeat the same figure, but not inside the paragraph of this text. To ensure that this paragraph appears on the same page as the next figure, I'm going to insert some extra text. That's what that sentence was about and what this sentence is about also: tricking the system with some extra words that really serve no purpose in life other than taking up space. Compare the spacing. </p>
 
-          <p>In this case, the sentence, "The following figure...," is contained in the description element. In this case the figure is inserted within the previous paragraph. Next, we'll repeat the same figure, but inside a separate paragraph. Compare the spacing.</p>
+              <span class="figdesc">The following diagram demonstrates the program logic when an interface becomes disconnected from its data source. </span>
 
-          <p class="figdesc">The following figure shows an example of output from the CompDat function in a PI DataLink worksheet. This was adapted from a screenshot found in the PI DataLink documentation.</p>
+              <div class="fignone">
+                <span class="figcap">Program flow for data-source reconnection v1</span>
+                <img src="/image/figure-1-low.png">
+              </div>
 
-          <div class="fignone">
-            <img src="/image/figure-2-low.png">
+              <h3>Figures without titles</h3>
+              <p>Though titles are a good idea for figures (and necessary if you want to create a cross reference), you might have a figure without a title. In general, you probably would not have a description either, because such figures should flow from the text. But if you include a description, it will be output. The following figure shows an example of output from the CompDat function in PI DataLink. </p>
+
+              <div class="fignone">
+                <img src="/image/figure-2-low.png">
+              </div>
+
+              <p>In this case, the sentence, "The following figure...," is contained in the description element. In this case the figure is inserted within the previous paragraph. Next, we'll repeat the same figure, but inside a separate paragraph. Compare the spacing.</p>
+
+              <p class="figdesc">The following figure shows an example of output from the CompDat function in a PI DataLink worksheet. This was adapted from a screenshot found in the PI DataLink documentation.</p>
+
+              <div class="fignone">
+                <img src="/image/figure-2-low.png">
+              </div>
+            </div>
           </div>
 
         </div>

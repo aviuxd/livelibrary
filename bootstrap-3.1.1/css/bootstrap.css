@@ -5786,7 +5786,7 @@ button.close {
     src: url('../../fonts/proxima-nova-semibold.svg') format('svg');
   }
   @font-face {
-    font-family: ProximaNovaItalics;
+    font-family: ProximaNovaItalic;
     src: url('../../fonts/proxima-nova-regular-italic.svg') format('svg');
   }
 }
@@ -5821,9 +5821,23 @@ button.close {
 }
 .page-header {
   margin-top: -10px;
+  padding-bottom: 0px;
   border-bottom: 0px;
   font-size: 26px;
   color: #555;
+}
+.osi-sub-header {
+  margin-left: -15px;
+}
+.pdf-print-email {
+  list-style: none;
+  margin-top: 28px;
+  float: right !important;
+}
+.pdf-print-email li {
+  display: inline-block;
+  float: left;
+  padding: 2px 4px;
 }
 p,
 li {
@@ -5882,7 +5896,7 @@ strong {
   font-weight: normal !important;
 }
 i {
-  font-family: ProximaNovaItalics;
+  font-family: ProximaNovaItalic;
   font-weight: normal;
   font-style: normal !important;
 }
@@ -6030,25 +6044,25 @@ body {
   position: relative;
   top: -50px;
 }
-.table-versions .table > thead > tr > td.prerelease,
-.table-versions .table > tbody > tr > td.prerelease,
-.table-versions .table > tfoot > tr > td.prerelease,
-.table-versions .table > thead > tr > th.prerelease,
-.table-versions .table > tbody > tr > th.prerelease,
-.table-versions .table > tfoot > tr > th.prerelease,
-.table-versions .table > thead > tr.prerelease > td,
-.table-versions .table > tbody > tr.prerelease > td,
-.table-versions .table > tfoot > tr.prerelease > td,
-.table-versions .table > thead > tr.prerelease > th,
-.table-versions .table > tbody > tr.prerelease > th,
-.table-versions .table > tfoot > tr.prerelease > th {
-  background-color: #999999;
+.table > thead > tr > td.prerelease,
+.table > tbody > tr > td.prerelease,
+.table > tfoot > tr > td.prerelease,
+.table > thead > tr > th.prerelease,
+.table > tbody > tr > th.prerelease,
+.table > tfoot > tr > th.prerelease,
+.table > thead > tr.prerelease > td,
+.table > tbody > tr.prerelease > td,
+.table > tfoot > tr.prerelease > td,
+.table > thead > tr.prerelease > th,
+.table > tbody > tr.prerelease > th,
+.table > tfoot > tr.prerelease > th {
+  background-color: #ffffff;
 }
-.table-versions .table-hover > tbody > tr > td.prerelease:hover,
-.table-versions .table-hover > tbody > tr > th.prerelease:hover,
-.table-versions .table-hover > tbody > tr.prerelease:hover > td,
-.table-versions .table-hover > tbody > tr.prerelease:hover > th {
-  background-color: #8c8c8c;
+.table-hover > tbody > tr > td.prerelease:hover,
+.table-hover > tbody > tr > th.prerelease:hover,
+.table-hover > tbody > tr.prerelease:hover > td,
+.table-hover > tbody > tr.prerelease:hover > th {
+  background-color: #f2f2f2;
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,
@@ -6061,6 +6075,21 @@ body {
 .table > thead > tr > th,
 .table > thead > tr > td {
   border-bottom: 1px solid #dddddd;
+}
+.prerelease-header {
+  padding: 2px 4px;
+  color: #fff;
+  background-color: #D9849D;
+}
+.osi-product-version tr a {
+  color: #333333;
+  display: block;
+  width: 305%;
+  position: relative;
+  z-index: 10;
+}
+.osi-product-version tr a:hover {
+  text-decoration: none;
 }
 .footer {
   color: #fff;
