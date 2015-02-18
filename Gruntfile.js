@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 			      },
 			      {	
 			      	expand: true, 
-			      	src: ['bootstrap-3.1.1/css/*'], 
+			      	src: ['css/*'], 
 			      	dest: 'release/', 
 			      	filter: 'isFile'
 			      },
@@ -115,12 +115,5 @@ module.exports = function(grunt) {
     		'usemin',
     		/* 'watch' */
     ]);
-
-    grunt.registerTask('watch', [
-
-    	/* 'watch' */
-    ]);
-
-    grunt.registertask()
 
 };
