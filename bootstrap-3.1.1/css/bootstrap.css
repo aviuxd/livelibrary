@@ -5804,14 +5804,28 @@ button.close {
   background-color: #055a73;
 }
 .nav-link-osi > li > a:visited {
+  background-color: #055a73;
   color: #fff;
 }
 .nav-link-osi > li > a:active {
+  background-color: #055a73;
   color: #fff;
+}
+.nav .open > a {
+  background-color: #055a73;
+}
+.nav .open > a:hover {
+  background-color: #055a73;
+}
+.nav .open > a:focus {
+  background-color: #055a73;
 }
 .navbar-brand {
   color: #fff;
   font-family: ProximaNovaSemibold;
+}
+.navbar-brand img {
+  margin-top: -5px;
 }
 .navbar-brand:link {
   color: #fff;
