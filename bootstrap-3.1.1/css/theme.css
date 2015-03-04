@@ -1,4 +1,16 @@
 @font-face {
+  font-family: "ProximaNovaRegular";
+  src: url("../../fonts/proxima-nova-regular.eot?");
+}
+@font-face {
+  font-family: "ProximaNovaSemibold";
+  src: url("../../fonts/proxima-nova-semibold.eot?");
+}
+@font-face {
+  font-family: "ProximaNovaItalic";
+  src: url("../../fonts/proxima-nova-regular-italic.eot?");
+}
+@font-face {
   font-family: 'ProximaNovaRegular';
   src: local('â˜º'), url('../../fonts/proxima-nova-regular.woff') format('woff');
   src: url('../../fonts/proxima-nova-regular.eot?#iefix') format('embedded-opentype'), url('../../fonts/proxima-nova-regular.woff') format('woff'), url('../../fonts/proxima-nova-regular.ttf') format('truetype'), url('../../fonts/proxima-nova-regular.svg#svgProximaNovaRegular') format('svg');
